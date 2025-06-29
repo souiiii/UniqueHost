@@ -1,0 +1,12 @@
+:root {
+  --text-prim: #dddbe2;
+  --backgrnd1: #27174d;
+  --backgrnd2: #381e74;
+  --prim-col: #7032ff;
+  --accent-col: #9935d3;
+  --accent-highlight: #a200ff;
+  --shady-underline: rgba(153, 53, 211, 0.31);
+  --accent-shady: rgba(112, 50, 255, 0.14);
+  --gray-text: #d4d4d4;
+  --button-shadow-primary: rgba(112, 50, 255, 0.36);
+}

@@ -1,0 +1,12 @@
+.logoText {
+  color: var(--text-prim);
+  font-family: Afacad;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.logoHighlightedText {
+  color: var(--prim-col);
+}

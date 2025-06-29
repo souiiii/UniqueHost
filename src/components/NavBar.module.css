@@ -1,0 +1,51 @@
+.parent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff00;
+  position: fixed;
+  padding: 1rem 2.5rem;
+}
+
+.rightNavDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navLinkDiv {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.navLinkContainer {
+  list-style: none;
+  position: relative;
+}
+
+.navLinks {
+  color: var(--text-prim);
+  font-family: Afacad;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.underline{
+    width: 0%;
+    height: 3px;
+    background-color: var(--prim-col);
+    position: absolute;
+    bottom: -5%;
+    transition: all 0.2s ease-out;
+}
+
+.navLinkContainer:hover .underline{
+    width: 100%;
+}

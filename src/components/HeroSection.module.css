@@ -1,0 +1,146 @@
+.parent {
+  width: 100%;
+  background: linear-gradient(var(--backgrnd1), var(--backgrnd2));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.mainContainer {
+  width: 85%;
+  padding-right: 700px;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.heading {
+  color: var(--text-prim);
+  font-family: Afacad;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 99.027%;
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  width: 165px;
+  height: 144px;
+  background-color: var(--accent-shady);
+  border-radius: 50%;
+  top: -35px;
+  left: -50px;
+}
+
+.description {
+  color: var(--gray-text);
+  font-family: Afacad;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  margin-bottom: 2rem;
+}
+
+.primaryHighlightedText {
+  color: var(--prim-col);
+}
+
+.secondaryHighlightedText {
+  color: var(--accent-col);
+  position: relative;
+}
+
+.secondaryHighlightedText::after {
+  content: "";
+  position: absolute;
+  background-color: var(--shady-underline);
+  width: 90%;
+  height: 25px;
+  bottom: 13%;
+  left: 5%;
+}
+
+.buttonDiv {
+  display: flex;
+  gap: 4rem;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+
+.getStartedButton {
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: var(--button-shadow-primary);
+  padding-block: 0.7rem;
+  padding-inline: 2rem;
+  position: relative;
+  z-index: 1;
+  color: #dddbe200;
+  transition: all 0.2s ease;
+}
+
+.getStartedButton:hover .shadow {
+  background-color: var(--accent-col);
+  top: -9%;
+  left: -3%;
+}
+
+.getStartedButton:hover {
+  background-color: var(--shady-underline);
+}
+
+.shadow {
+  transition: all 0.2s;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: var(--prim-col);
+  color: var(--text-prim);
+  position: absolute;
+  font-family: Afacad;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 20px;
+  padding: 0.7rem 2rem;
+  z-index: -1;
+  left: -5%;
+  top: -15%;
+}
+
+.discordDiv {
+  color: var(--text-prim);
+  font-family: Afacad;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+
+}
+
+.discord {
+  font-weight: 700;
+}
+
+.discordSvg{
+    width: 45px;
+}
