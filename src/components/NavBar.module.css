@@ -1,12 +1,21 @@
 .parent {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background: linear-gradient(#27174df1,#281850);
   position: fixed;
   padding: 1rem 2.5rem;
-  z-index: 2;
+  z-index: 999;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1800px;
+
 }
 
 .rightNavDiv {
@@ -49,4 +58,27 @@
 
 .navLinkContainer:hover .underline{
     width: 100%;
+}
+
+.button{
+  position: relative;
+}
+
+.arrowDiv{
+  position: absolute;
+  top: 5%;
+  right: 6%;
+}
+
+.arrow{
+  width: 15px;
+  transform: scale(0);
+  transition: all 0.2s ease;
+  height: 15px;
+  fill: var(--text-prim);
+
+}
+
+.button:hover .arrow{
+  transform: scale(1) rotate(135deg);
 }
