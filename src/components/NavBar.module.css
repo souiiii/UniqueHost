@@ -3,9 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff00;
+  background: linear-gradient(#27174df1,#281850);
   position: fixed;
   padding: 1rem 2.5rem;
+  z-index: 2;
 }
 
 .rightNavDiv {

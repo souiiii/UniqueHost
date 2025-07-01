@@ -1,0 +1,281 @@
+.parent {
+  width: 100%;
+  height: 1000px;
+  background: linear-gradient(var(--backgrnd2), var(--backgrnd1));
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+  /* justify-content: end; */
+  justify-content: center;
+  /* align-items: start; */
+  padding-inline: 5rem;
+  position: relative;
+}
+
+.container1 {
+  display: flex;
+  grid-column: 1;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1700px;
+  height: 100%;
+  /* padding-inline: 5rem; */
+}
+
+.imgDiv {
+  position: absolute;
+  /* top: 65px; */
+  top: -20%;
+  left: -10%;
+  overflow-x: hidden;
+}
+
+.img {
+  position: relative;
+  /* width: 900px; */
+
+  filter: sepia(0.1) hue-rotate(-10deg) saturate(0.8);
+  width: calc(30vw + 100px);
+  z-index: 1;
+}
+
+.textDiv {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  text-align: left;
+  align-items: end;
+  padding-bottom: 10rem;
+  z-index: 2;
+}
+
+.text {
+  position: relative;
+  color: var(--text-prim);
+  text-shadow: 0px 5px 7.6px rgba(255, 255, 255, 0.06);
+  font-family: "Roboto Flex";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 101.508%; /* 40.603px */
+  z-index: 1;
+}
+
+.text::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../public/comma.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: -40%;
+  left: -4%;
+  width: 150px;
+  height: 148px;
+  z-index: -1;
+}
+
+.gradientText1 {
+  background: linear-gradient(180deg, rgba(15, 203, 255, 0.85) 0%, #625bcd);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 101.508%;
+}
+
+/* .gradientText2 {
+  background: linear-gradient(180deg, #4776d4, #625bcd);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 101.508%;
+} */
+
+.gradientText3 {
+  background: linear-gradient(180deg, #615accba, rgba(153, 53, 211, 0.85) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 101.508%;
+}
+
+.container2 {
+  grid-column: 2;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 5rem;
+  z-index: 2;
+}
+
+.headingDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.mainHeading {
+  color: var(--text-prim);
+  font-family: Afacad;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.featureText {
+  background: linear-gradient(
+    270deg,
+    rgba(112, 50, 255, 0.88) 0%,
+    rgba(153, 53, 211, 0.88) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subHeading {
+  color: var(--gray-text);
+  font-family: Afacad;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.gridBox {
+  width: 100%;
+  height: 100%;
+}
+
+.gridBox1,
+.gridBox2,
+.gridBox3 {
+  grid-row: 1;
+}
+
+.gridBox4,
+.gridBox5,
+.gridBox6 {
+  grid-row: 2;
+}
+
+.gridBox1,
+.gridBox4 {
+  grid-column: 1;
+}
+
+.gridBox2,
+.gridBox5 {
+  grid-column: 2;
+}
+
+.gridBox3,
+.gridBox6 {
+  grid-column: 3;
+}
+
+.gridBox1,
+.gridBox2,
+.gridBox3,
+.gridBox4,
+.gridBox5,
+.gridBox6,
+.gridBox7,
+.gridBox8 {
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.21);
+}
+
+.gridBox1 {
+  background: linear-gradient(251deg, #443073 -0.64%, #351e6b 93.82%);
+}
+.gridBox2 {
+  background: linear-gradient(181deg, #443073 0.41%, #351e6b 153.27%);
+}
+.gridBox3 {
+  background: linear-gradient(115deg, #443073 5.65%, #351e6b 86.56%);
+}
+.gridBox4 {
+  background: linear-gradient(297deg, #443073 -0.21%, #351e6b 86.15%);
+}
+.gridBox5 {
+  background: linear-gradient(1deg, #443073 0.56%, #351e6b 155.49%);
+}
+.gridBox6 {
+  background: linear-gradient(61deg, #443073 4.99%, #351e6b 95.94%);
+}
+
+@media screen and (max-width: 1676px) {
+  /* .imgDiv {
+      top: -22vh;
+    } */
+  /* .img {
+      width: calc(30vw + 100px);
+    } */
+  .parent {
+    grid-template-columns: 0.8fr 1fr;
+    height: 750px;
+  }
+
+  .textDiv {
+    padding-bottom: 5rem;
+  }
+
+  .text {
+    font-size: 48px;
+  }
+
+  .container2{
+    padding-bottom: 0.5rem;
+  }
+
+  .headingDiv{
+    margin-bottom: 10px;
+  }
+
+  .mainHeading{
+    font-size: 48px;
+    line-height: normal;
+  }
+
+  .subHeading{
+    font-size: 20px;
+  }
+
+  .grid{
+    grid-template-rows: repeat(2, 150px);
+  }
+
+  .text::after {
+    top: -41%;
+    left: -4%;
+    width: 120px;
+    height: 120px;
+  }
+}

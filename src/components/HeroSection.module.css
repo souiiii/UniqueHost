@@ -1,17 +1,53 @@
 .parent {
   width: 100%;
   background: linear-gradient(var(--backgrnd1), var(--backgrnd2));
-  height: 100vh;
+  height: 1050px;
   display: flex;
-  justify-content: center;
+  justify-content: end;
+  align-items: center;
+  padding-inline: 5rem;
+  position: relative;
+}
+
+.artifacts {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-width: 1700px;
+  /* padding-inline: 5rem; */
+}
+
+.imgDiv {
+  position: absolute;
+  /* top: 65px; */
+  top: -28%;
+  right: 0vw;
+
+  overflow-x: hidden;
+}
+
+.img {
+  position: relative;
+  right: -8%;
+  /* width: 900px; */
+
+  filter: sepia(0.1) hue-rotate(-10deg) saturate(1.2);
+  width: calc(30vw + 400px);
+  z-index: 1;
 }
 
 .mainContainer {
-  width: 85%;
-  padding-right: 700px;
-  max-width: 1400px;
+  /* padding-right: 700px; */
+  width: 50%;
+  max-width: 1500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,7 +83,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .primaryHighlightedText {
@@ -134,13 +170,45 @@
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
-
 }
 
 .discord {
   font-weight: 700;
 }
 
-.discordSvg{
-    width: 45px;
+.discordSvg {
+  width: 45px;
+}
+
+@media screen and (min-width: 1790px) {
+  .parent {
+    justify-content: center;
+  }
+
+  .img {
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1676px) {
+  .imgDiv {
+    top: -18%;
+  }
+  .img {
+    width: calc(25vw + 450px);
+  }
+  .parent{
+    height: 780px;
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  .heading {
+    font-size: 96px;
+  }
+
+  .shadow,
+  .getStartedButton {
+    font-size: 30px;
+  }
 }
