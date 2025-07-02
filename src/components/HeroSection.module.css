@@ -1,7 +1,7 @@
 .parent {
   width: 100%;
   background: linear-gradient(var(--backgrnd1), var(--backgrnd2));
-  height: 1050px;
+  height: 1000px;
   display: flex;
   justify-content: end;
   align-items: center;

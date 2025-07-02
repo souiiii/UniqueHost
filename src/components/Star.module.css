@@ -1,0 +1,21 @@
+
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: fit-content;
+}
+.img{
+    width: 100%;
+    
+}
+
+
+@media screen and (max-width: 1676px) {
+
+    .parent{
+        width: 150px;
+    }
+}

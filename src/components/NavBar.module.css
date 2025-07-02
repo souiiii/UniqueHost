@@ -80,5 +80,13 @@
 }
 
 .button:hover .arrow{
-  transform: scale(1) rotate(135deg);
+  transform: scale(1) rotate(-135deg);
+}
+
+
+
+@media screen and (max-width: 1676px) {
+    .navLinks{
+      font-size: 18px;
+    }
 }
