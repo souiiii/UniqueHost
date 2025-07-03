@@ -3,19 +3,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#27174df1,#281850);
+  background: linear-gradient(#27174df1, #281850);
   position: fixed;
   padding: 1rem 2.5rem;
   z-index: 999;
 }
 
-.container{
+.container {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1800px;
-
 }
 
 .rightNavDiv {
@@ -47,46 +46,84 @@
   text-decoration: none;
 }
 
-.underline{
-    width: 0%;
-    height: 3px;
-    background-color: var(--prim-col);
-    position: absolute;
-    bottom: -5%;
-    transition: all 0.2s ease-out;
+.underline {
+  width: 0%;
+  height: 3px;
+  background-color: var(--prim-col);
+  position: absolute;
+  bottom: -5%;
+  transition: all 0.2s ease-out;
 }
 
-.navLinkContainer:hover .underline{
-    width: 100%;
+.navLinkContainer:hover .underline {
+  width: 100%;
 }
 
-.button{
+.button {
   position: relative;
 }
 
-.arrowDiv{
+.arrowDiv {
   position: absolute;
   top: 5%;
   right: 6%;
 }
 
-.arrow{
+.arrow {
   width: 15px;
   transform: scale(0);
   transition: all 0.2s ease;
   height: 15px;
   fill: var(--text-prim);
-
 }
 
-.button:hover .arrow{
+.button:hover .arrow {
   transform: scale(1) rotate(-135deg);
 }
 
-
-
 @media screen and (max-width: 1676px) {
-    .navLinks{
-      font-size: 18px;
-    }
+  .navLinks {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1486px) {
+  .navLinks {
+    font-size: 16px;
+  }
+
+  .arrow {
+    width: 10px;
+  }
+
+  .button{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1058px) {
+  .parent{
+
+    padding: 0.5rem 2rem;
+  }
+
+  .navLinks {
+    font-size: 12px;
+  }
+
+  .button{
+    font-size: 16px;
+  }
+
+  .underline {
+    height: 2px;
+  }
+
+  .rightNavDiv, .navLinkDiv{
+    gap: 2rem;
+  }
+
+  .button{
+    padding: 0.4rem 1rem;
+  }
 }

@@ -166,7 +166,7 @@
     font-size: 36px;
   }
 
-  .heading2{
+  .heading2 {
     font-size: 48px;
   }
 
@@ -182,5 +182,115 @@
   .commaDiv {
     width: 80px;
     top: 0;
+  }
+}
+
+@media screen and (max-width: 1486px) {
+  .container {
+    height: 280px;
+  }
+
+  .textDiv {
+    padding: 1.5rem 2rem;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+
+  .testimonialContainer {
+    gap: 3rem;
+  }
+
+  .heading2 {
+    font-size: 40px;
+  }
+
+  .button {
+    font-size: 24px;
+  }
+
+  .testContainer {
+    padding: 2.5rem 2.5rem;
+  }
+
+  .name {
+    font-size: 28px;
+    margin-bottom: 1.7rem;
+  }
+
+  .commaDiv {
+    width: 60px;
+    top: 0;
+    left: -20%;
+  }
+
+  .desc {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1378px) {
+  .container {
+    height: 260px;
+  }
+
+  .testContainer {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1228px) {
+  .parent {
+    padding-block: 6rem;
+  }
+
+  .container {
+    height: 240px;
+  }
+
+  .textDiv {
+    padding: 1rem 1rem;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+
+  .name {
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+  }
+
+  .heading2 {
+    font-size: 36px;
+  }
+
+  .commaDiv {
+    width: 40px;
+    top: 10%;
+    left: -20%;
+  }
+
+  .desc {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1058px) {
+  .parent {
+    padding-inline: 2.5rem;
+  }
+
+  .container {
+    height: 200px;
+  }
+
+  .grid {
+    column-gap: 1rem;
   }
 }

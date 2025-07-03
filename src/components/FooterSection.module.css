@@ -143,19 +143,19 @@
   min-width: fit-content;
 }
 
-.buttonBgDiv{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-51%, -50%);
-    width: 500px;
+.buttonBgDiv {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-51%, -50%);
+  width: 500px;
 }
 
 .buttonBg {
-    width: 100%;
+  width: 100%;
 }
 
 .button {
@@ -172,4 +172,111 @@
   .desc {
     font-size: 24px;
   }
+}
+
+@media screen and (max-width: 1486px) {
+  .heading {
+    font-size: 48px;
+  }
+  .desc {
+    font-size: 20px;
+  }
+
+  .linkDiv {
+    gap: 6rem;
+    padding-inline: 10rem;
+  }
+
+  .iconDiv {
+    font-size: 20px;
+    margin: 2rem;
+  }
+
+  .iconSvg {
+    width: 36px;
+  }
+
+  .button {
+    font-size: 26px;
+    padding-block: 0.7rem;
+  }
+
+  .buttonBgDiv {
+    width: 400px;
+  }
+
+  .footerNoteDiv {
+    margin-top: 1.5rem;
+  }
+
+  .footerNote {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1378px) {
+  .linkDiv {
+    gap: 6rem;
+    padding-inline: 5rem;
+  }
+}
+
+@media screen and (max-width: 1228px) {
+  .linkDiv {
+    padding-inline: 2rem;
+  }
+  .footerImgDiv{
+    width: 100%;
+  }
+
+  .iconDiv {
+    font-size: 16px;
+    margin: 1.7rem;
+  }
+
+  .iconSvg {
+    width: 30px;
+  }
+
+  .button {
+    font-size: 20px;
+    padding-block: 0.7rem;
+  }
+
+  .buttonBgDiv {
+    width: 350px;
+  }
+
+  .heading {
+    font-size: 36px;
+    margin-bottom: 1rem;
+  }
+
+  .desc {
+    font-size: 16px;
+    margin-bottom: 2rem;
+  }
+
+  .footerNote {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1058px) {
+  .linkDiv {
+    padding-inline: 1rem;
+    gap: 3rem;
+  }
+  .topFooterContainer  {
+    padding-inline: 2.5rem;
+  }
+
+  /* .buttonBgDiv {
+    width: 300px;
+  }
+
+  .button {
+    font-size: 20px;
+    padding-block: 0.7rem;
+  } */
 }

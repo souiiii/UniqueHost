@@ -19,3 +19,10 @@
         width: 150px;
     }
 }
+
+
+@media screen and (max-width: 1228px) {
+    .parent{
+        width: 125px;
+    }
+}
