@@ -42,7 +42,7 @@
   align-items: end;
   height: 100%;
   width: 100%;
-  background: url("public/minecraft.png");
+  background: url("/minecraft.png");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;

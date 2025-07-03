@@ -6,7 +6,7 @@ export default function DeveloperSection() {
     <div className={styles.parent}>
       <div className={styles.container}>
         <div className={styles.imgWrapper}>
-          <img className={styles.img} src="../../public/wow.png" />
+          <img className={styles.img} src="/wow.png" />
         </div>
         <div className={styles.actionDiv}>
           <div className={styles.textDiv}>
@@ -25,21 +25,21 @@ export default function DeveloperSection() {
           <div className={styles.testContainer}>
             <Star />
             <div>
-              <h1 className={styles.name}><div className={styles.commaDiv}><img src="../../public/comma.png" className={styles.comma}/></div>Almighty Subham</h1>
+              <h1 className={styles.name}><div className={styles.commaDiv}><img src="/comma.png" className={styles.comma}/></div>Almighty Subham</h1>
               <p className={styles.desc}>“This is the cheapest and best hosting. The staff here talks very well and also helps. If you are thinking of making a personal SMP or your own public server, then unique hosting is the best option. ❤️”</p>
             </div>
           </div>
           <div className={`${styles.testContainer} ${styles.middleContainer}`}>
             <Star />
             <div>
-              <h1 className={styles.name}><div className={styles.commaDiv}><img src="../../public/comma.png" className={styles.comma}/></div>Almighty Subham</h1>
+              <h1 className={styles.name}><div className={styles.commaDiv}><img src="/comma.png" className={styles.comma}/></div>Almighty Subham</h1>
               <p className={styles.desc}>“This is the cheapest and best hosting. The staff here talks very well and also helps. If you are thinking of making a personal SMP or your own public server, then unique hosting is the best option. ❤️”</p>
             </div>
           </div>
           <div className={styles.testContainer}>
             <Star />
             <div>
-              <h1 className={styles.name}><div className={styles.commaDiv}><img src="../../public/comma.png" className={styles.comma}/></div>Almighty Subham</h1>
+              <h1 className={styles.name}><div className={styles.commaDiv}><img src="/comma.png" className={styles.comma}/></div>Almighty Subham</h1>
               <p className={styles.desc}>“This is the cheapest and best hosting. The staff here talks very well and also helps. If you are thinking of making a personal SMP or your own public server, then unique hosting is the best option. ❤️”</p>
             </div>
           </div>

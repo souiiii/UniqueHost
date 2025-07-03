@@ -5,7 +5,7 @@ export default function FooterSection() {
     <div className={styles.parent}>
       <div className={styles.topFooterContainer}>
         <div className={styles.footerImgDiv}>
-          <img src="../../public/footer.png" className={styles.footerImg} />
+          <img src="/footer.png" className={styles.footerImg} />
         </div>
         <h1 className={styles.heading}>
           Create your very own{" "}
@@ -64,7 +64,7 @@ export default function FooterSection() {
             <div className={styles.buttonDiv}>
                 <div className={styles.buttonBgDiv}>
 
-                <img src="../../public/buttonbg.png" className={styles.buttonBg}/>
+                <img src="/buttonbg.png" className={styles.buttonBg}/>
                 </div>
               <button className={`button ${styles.button}`}>Order Now →</button>
             </div>
