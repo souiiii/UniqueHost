@@ -96,14 +96,13 @@
     width: 10px;
   }
 
-  .button{
+  .button {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 1058px) {
-  .parent{
-
+  .parent {
     padding: 0.5rem 2rem;
   }
 
@@ -111,7 +110,7 @@
     font-size: 12px;
   }
 
-  .button{
+  .button {
     font-size: 16px;
   }
 
@@ -119,11 +118,32 @@
     height: 2px;
   }
 
-  .rightNavDiv, .navLinkDiv{
+  .rightNavDiv,
+  .navLinkDiv {
     gap: 2rem;
   }
 
-  .button{
+  .button {
     padding: 0.4rem 1rem;
+  }
+}
+
+@media screen and (max-width: 737px) {
+  .navLinkDiv {
+    display: none;
+  }
+
+  .parent{
+    padding: 0.5rem 1rem;
+  }
+
+  .arrowDiv {
+    position: absolute;
+    top: 6%;
+    right: 8%;
+  }
+
+  .arrow {
+    width: 7px;
   }
 }

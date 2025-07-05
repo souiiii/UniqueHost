@@ -280,3 +280,172 @@
     padding-block: 0.7rem;
   } */
 }
+
+@media screen and (max-width: 900px) {
+  .linkDiv {
+    padding-inline: 1rem;
+    gap: 2rem;
+  }
+
+  .iconDiv {
+    font-size: 14px;
+    margin: 1rem;
+  }
+
+  .footerNoteDiv {
+    margin-block: 1rem 0.5rem;
+    width: 50%;
+  }
+
+  .footerNote {
+    font-size: 9px;
+  }
+
+  .button {
+    font-size: 16px;
+    padding-block: 0.5rem;
+    padding-inline: 0.8rem;
+  }
+
+  .buttonBgDiv {
+    width: 250px;
+  }
+
+  .heading {
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+
+  }
+  .desc {
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 737px) {
+  .linkDiv{
+    padding-inline: 0;
+    gap: 1rem;
+  }
+  
+  .iconDiv{
+    margin: 0.7rem;
+  }
+
+  .iconSvg {
+    width: 24px;
+  }
+
+  .heading {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+
+  }
+  .desc {
+    font-size: 12px;
+    margin-bottom: 1.5rem;
+  }
+
+
+  .button {
+    font-size: 14px;
+    padding-block: 0.4rem;
+    padding-inline: 0.7rem;
+  }
+
+  .buttonBgDiv {
+    width: 180px;
+  }
+  
+  .Div{
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .discord{
+    font-size: 10px;
+  }
+
+}
+
+@media screen and (max-width: 603px) {
+  .topFooterContainer{
+    padding-inline: 0rem;
+  }
+  .iconDiv{
+    margin-inline: 0rem;
+    margin-block: 0.5rem;
+  }
+
+  .linkDiv{
+    padding-inline: 0;
+    max-width: 350px;
+    gap:2.5rem;
+    justify-content: space-around;
+  }
+
+  .discord{
+    display: none;
+  }
+
+  .iconSvg{
+    width: 30px;
+  }
+  .Div{
+    justify-content: space-between;
+  }
+
+  .desc {
+    font-size: 9px;
+    margin-bottom: 1.5rem;
+  }
+
+  .footerNoteDiv{
+    width: 70%;
+    margin-block: 0.7rem 0.7rem;
+  }
+
+  .footerNote{
+    font-size: 7px;
+  }
+
+}
+
+@media screen and (max-width: 483px) {
+    .bottomFooterContainer{
+      padding-top: 1rem;
+    }
+    
+    .innerContainer{
+      min-height: fit-content;
+      justify-content: space-between;
+      height: 100%;
+      gap: 1.5rem;
+    }
+
+    .heading{
+      font-size: 30px;
+      text-align: center;
+      padding-inline: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .desc {
+      font-size: 14px;
+      width: 90%;
+      margin-bottom: 1.5rem;
+    }
+
+    .button{
+      font-size: 20px;
+    }
+
+    .buttonBgDiv {
+      width: 280px;
+    }
+    
+    .iconDiv{
+      display: none;
+    }
+
+}

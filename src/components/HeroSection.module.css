@@ -197,7 +197,7 @@
   .img {
     width: calc(25vw + 450px);
   }
-  .parent{
+  .parent {
     height: 780px;
   }
 }
@@ -213,40 +213,38 @@
   }
 }
 
-
 @media screen and (max-width: 1486px) {
-  .parent{
+  .parent {
     height: 650px;
   }
 
-  .heading{
+  .heading {
     font-size: 64px;
     margin-bottom: 2rem;
   }
 
-  .heading::after{
+  .heading::after {
     width: 120px;
     height: 110px;
     top: -25px;
     left: -32px;
   }
 
-  .description{
+  .description {
     font-size: 20px;
   }
 
   .shadow,
   .getStartedButton {
     font-size: 20px;
-    padding: 0.5rem 1.5rem
+    padding: 0.5rem 1.5rem;
   }
 
-  .discordDiv{
+  .discordDiv {
     font-size: 20px;
-
   }
 
-  .discordSvg{
+  .discordSvg {
     width: 36px;
   }
 
@@ -258,7 +256,7 @@
     width: calc(16vw + 400px);
   }
 
-  .artifacts svg{
+  .artifacts svg {
     width: 400px;
   }
 
@@ -266,7 +264,6 @@
     height: 20px;
   }
 }
-
 
 @media screen and (max-width: 1373px) {
   .imgDiv {
@@ -278,17 +275,115 @@
 }
 
 @media screen and (max-width: 1228px) {
-  .heading{
+  .heading {
     font-size: 56px;
     margin-bottom: 1.5rem;
   }
-  .description{
+  .description {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 1058px) {
-  .parent{
+  .parent {
     padding-inline: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .img {
+    width: calc(10vw + 300px);
+  }
+  .heading {
+    font-size: 48px;
+  }
+  .description {
+    font-size: 14px;
+  }
+  .discordDiv {
+    font-size: 16px;
+  }
+
+  .mainContainer {
+    width: 60%;
+  }
+
+  .buttonDiv {
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .parent {
+    height: 500px;
+  }
+
+  .artifacts {
+    width: 300px;
+    top: -5%;
+    left: 50%;
+  }
+  .artifacts svg {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 737px) {
+  .imgDiv {
+    display: none;
+  }
+
+  .mainContainer {
+    width: 100%;
+  }
+
+  .artifacts {
+    width: 200px;
+    top: -25%;
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 603px) {
+  .parent {
+    padding-inline: 1rem;
+  }
+
+  .artifacts {
+    width: 150px;
+    top: -35%;
+    left: 50%;
+  }
+
+  .buttonDiv {
+    gap: 2rem;
+    padding-left: 0.5rem;
+  }
+
+  .heading {
+    font-size: 56px;
+  }
+  
+  .description {
+    font-size: 16px;
+  }
+  
+  .discordDiv {
+    /* display: none; */
+  }
+  
+  .heading::after {
+    width: 70px;
+    height: 65px;
+    top: -6px;
+    left: -15px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .parent {
+    height: 500px;
+    align-items: end;
+    padding-block: 2rem;
   }
 }
