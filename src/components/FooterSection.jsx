@@ -39,7 +39,7 @@ export default function FooterSection() {
                   <ellipse cx="196" cy="279" rx="33" ry="35"></ellipse>
                   <ellipse cx="312" cy="279" rx="33" ry="35"></ellipse>
                 </svg>
-                <div className={styles.discord}>Discord</div>
+                <div className={styles.discord}>Instagram</div>
               </div>
               <div className={styles.iconDiv}>
                 <svg
@@ -86,7 +86,7 @@ export default function FooterSection() {
                   <ellipse cx="196" cy="279" rx="33" ry="35"></ellipse>
                   <ellipse cx="312" cy="279" rx="33" ry="35"></ellipse>
                 </svg>
-                <div className={styles.discord}>Discord</div>
+                <div className={styles.discord}>Twitter</div>
               </div>
               <div className={styles.iconDiv}>
                 <svg
@@ -105,7 +105,7 @@ export default function FooterSection() {
                   <ellipse cx="196" cy="279" rx="33" ry="35"></ellipse>
                   <ellipse cx="312" cy="279" rx="33" ry="35"></ellipse>
                 </svg>
-                <div className={styles.discord}>Discord</div>
+                <div className={styles.discord}>Youtube</div>
               </div>
             </div>
           </div>

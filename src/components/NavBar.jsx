@@ -11,30 +11,31 @@ export default function NavBar() {
           <ul className={styles.navLinkDiv}>
             <li className={styles.navLinkContainer}>
               <div className={styles.underline}></div>
-              <Link to='/' href="" className={styles.navLinks}>
+              <Link to="/" href="" className={styles.navLinks}>
                 Home
               </Link>
             </li>
             <li className={styles.navLinkContainer}>
               <div className={styles.underline}></div>
-              <Link to='/hostings' href="" className={styles.navLinks}>
+              <Link to="/hostings" href="" className={styles.navLinks}>
                 Hosting Plans
               </Link>
             </li>
             <li className={styles.navLinkContainer}>
               <div className={styles.underline}></div>
-              <Link to='/website-builder' href="" className={styles.navLinks}>
+              <Link to="/website-builder" href="" className={styles.navLinks}>
                 Website Builder
               </Link>
             </li>
             <li className={styles.navLinkContainer}>
               <div className={styles.underline}></div>
-              <Link to='/about-us' href="" className={styles.navLinks}>
+              <Link to="/about-us" href="" className={styles.navLinks}>
                 About Us
               </Link>
             </li>
           </ul>
-          <Link to='/hostings' className={`button ${styles.button}`}>
+
+          <Link to="/hostings" className={`button ${styles.button}`}>
             Buy Now
             <div className={styles.arrowDiv}>
               <svg
@@ -46,6 +47,18 @@ export default function NavBar() {
               </svg>
             </div>
           </Link>
+          <div className={styles.svgDiv}>
+            <svg
+              className={styles.svg}
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
