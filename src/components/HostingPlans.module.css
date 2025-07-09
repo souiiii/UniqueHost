@@ -1,0 +1,79 @@
+.hostingContainer {
+  min-width: 200px;
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(249deg, #443073 2.45%, #351e6b 94.01%);
+  border: 2px solid rgba(255, 255, 255, 0.07);
+  border-radius: 15px;
+  padding-block: 1.5rem;
+  padding-top: 1rem;
+  position: relative;
+}
+
+.hostingName {
+  color: var(--text-prim);
+  text-align: center;
+  font-family: Afacad;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.price {
+  color: var(--text-prim);
+  background-color: var(--accent-col);
+  width: 100%;
+  text-align: center;
+  font-family: Afacad;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hostingDetailsDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.hostingDetailText {
+  color: var(--gray-text);
+  text-align: center;
+  font-family: Afacad;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.button {
+  /* border-radius: 15px 0px; */
+  background: #7032ff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 55%;
+}
+
+.button:hover{
+    background-color: var(--accent-col);
+}
+
+.hostingContainer:hover{
+    border: 2px  solid #9935d396;
+}
+
+.hostingContainer:hover .button{
+    background-color: var(--accent-col);
+
+}
