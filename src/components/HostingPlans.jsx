@@ -1,11 +1,12 @@
 import styles from './HostingPlans.module.css';
 
-export default function HostingPlans({children, price, ram, cpu, ssd, img}) {
+export default function HostingPlans({children, price, ram, cpu, ssd, vps=false, img}) {
   return (
     <div className={styles.hostingContainer}>
+        <div className={`${styles.vps} ${!vps && styles.visible}`}>VPS</div>
       <h1 className={styles.hostingName}>{children}</h1>
       <div className={styles.hostingImageDiv}>
-        <img className={styles.hostingImage} />
+        <img className={styles.hostingImage} src={img} />
       </div>
       <div className={styles.price}>Rs. {price} / month</div>
       <div className={styles.hostingDetailsDiv}>

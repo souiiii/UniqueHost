@@ -12,6 +12,7 @@
   padding-block: 1.5rem;
   padding-top: 1rem;
   position: relative;
+  /* overflow: hidden; */
 }
 
 .hostingName {
@@ -25,6 +26,7 @@
 }
 
 .price {
+    margin-top: 0.5rem;
   color: var(--text-prim);
   background-color: var(--accent-col);
   width: 100%;
@@ -57,7 +59,7 @@
 
 .button {
   /* border-radius: 15px 0px; */
-  background: #7032ff;
+  background: var(--prim-col);
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -65,15 +67,55 @@
   width: 55%;
 }
 
-.button:hover{
-    background-color: var(--accent-col);
+.button:hover {
+  background-color: var(--accent-col);
 }
 
-.hostingContainer:hover{
-    border: 2px  solid #9935d396;
+.hostingContainer:hover {
+  border: 2px solid #9935d396;
 }
 
-.hostingContainer:hover .button{
-    background-color: var(--accent-col);
+.hostingContainer:hover .button {
+  background-color: var(--accent-col);
+}
 
+.vps {
+  position: absolute;
+  top: 2%;
+  color: yellow;
+  width: 150px;
+  text-align: center;
+  font-family: Afacad;
+  font-size: 32px;
+  transform: rotate(45deg);
+  right: -15%;
+
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.visible {
+  display: none;
+}
+
+
+.hostingImageDiv{
+    min-height: 200px;
+    min-width: 309px;
+    position: relative;
+    overflow: hidden;
+    transform: rotate(19deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hostingImage{
+    position: absolute;
+    top: 0;
+    scale: 1.4;
+    /* width: 100%; */
+    height: 100%;
+    aspect-ratio: fixed;
 }
