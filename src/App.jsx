@@ -8,6 +8,10 @@ import HomePage from "./Pages/HomePage";
 import { useLenis } from "lenis/react";
 import { useEffect } from "react";
 import Lenis from "lenis";
+import Hostings from "./Pages/Hostings";
+import WebsiteBuilder from "./Pages/WebsiteBuilder";
+import Contact from "./Pages/Contact";
+import About from "./Pages/About";
 
 function App() {
   const lenis = new Lenis({
@@ -28,6 +32,10 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path="/hostings" element={<Hostings />} />
+      <Route path="/website-builder" element={<WebsiteBuilder />} />
+      <Route path="/contact-us" element={<Contact />} />
+      <Route path="/about-us" element={<About />} />
     </Routes>
   );
 }

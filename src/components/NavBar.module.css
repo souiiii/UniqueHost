@@ -128,12 +128,14 @@
   }
 }
 
-@media screen and (max-width: 737px) {
+@media screen and (max-width: 800px) {
   .navLinkDiv {
     display: none;
   }
+}
 
-  .parent{
+@media screen and (max-width: 737px) {
+  .parent {
     padding: 0.5rem 1rem;
   }
 
