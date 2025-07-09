@@ -19,12 +19,13 @@
   align-items: center;
   flex-direction: column;
   max-width: 1700px;
-
+  margin-bottom: 8rem;
 }
 
 .heading {
   color: var(--text-prim);
   font-family: Afacad;
+  text-align: center;
   font-size: 56px;
   font-style: normal;
   font-weight: 700;
@@ -33,6 +34,7 @@
 }
 
 .subHeading {
+  text-align: center;
   color: var(--text-prim);
   font-family: Afacad;
   font-size: 36px;
@@ -60,4 +62,86 @@
   flex-wrap: wrap;
   column-gap: 3rem;
   row-gap: 4rem;
+}
+
+.additionalServicesContianer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h2 {
+  margin-bottom: 1rem;
+}
+
+.desc {
+  color: var(--text-prim);
+  text-align: center;
+  font-family: Afacad;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 31.2px */
+  max-width: 1000px;
+  margin-bottom: 2rem;
+}
+
+.button {
+  color: var(--text-prim);
+  font-family: Afacad;
+  background-color: #5865f2;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: fit-content;
+  margin-bottom: 8rem;
+  transition: all 0.2s ease;
+}
+
+.ellipse{
+    fill: #5865f2;
+    transition: all 0.08s ease;
+}
+
+.button:hover, .button:hover .ellipse{
+    fill: var(--accent-col);
+    background-color: var(--accent-col);
+}
+
+.linkButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.discordDiv {
+  width: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discordSvg {
+  width: 100%;
+}
+
+.note {
+  color: var(--text-prim);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  font-family: Afacad;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media screen and (max-width: 483px) {
+  .parent {
+    padding-inline: 1rem;
+  }
 }

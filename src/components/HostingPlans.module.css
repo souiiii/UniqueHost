@@ -1,6 +1,6 @@
 .hostingContainer {
   min-width: 200px;
-  max-width: 350px;
+  max-width: 370px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -19,7 +19,7 @@
   color: var(--text-prim);
   text-align: center;
   font-family: Afacad;
-  font-size: 48px;
+  font-size: 56px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -109,12 +109,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-block: 1rem;
 }
 
 .hostingImage{
     position: absolute;
     top: 0;
-    scale: 1.4;
+    scale: 1.5;
     /* width: 100%; */
     height: 100%;
     aspect-ratio: fixed;
