@@ -12,6 +12,7 @@ import Hostings from "./Pages/Hostings";
 import WebsiteBuilder from "./Pages/WebsiteBuilder";
 import Contact from "./Pages/Contact";
 import About from "./Pages/About";
+import FourOFour from "./components/FourOFour";
 
 function App() {
   const lenis = new Lenis({
@@ -34,8 +35,8 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/hostings" element={<Hostings />} />
       <Route path="/website-builder" element={<WebsiteBuilder />} />
-      <Route path="/contact-us" element={<Contact />} />
       <Route path="/about-us" element={<About />} />
+      <Route path="*" element={<FourOFour/>}/>
     </Routes>
   );
 }

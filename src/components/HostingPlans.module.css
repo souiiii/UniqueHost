@@ -120,3 +120,25 @@
     height: 100%;
     aspect-ratio: fixed;
 }
+
+@media screen and (max-width: 960px){
+    
+    .hostingName{
+        font-size: 48px;
+    }
+
+    .price{
+        font-size: 32px;
+    }
+
+    .vps{
+        width: 100px;
+        top: 2%;
+        right: -5%;
+    }
+
+    .hostingDetailText{
+        font-size: 20px;
+    }
+}
+

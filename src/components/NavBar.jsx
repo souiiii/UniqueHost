@@ -29,12 +29,6 @@ export default function NavBar() {
             </li>
             <li className={styles.navLinkContainer}>
               <div className={styles.underline}></div>
-              <Link to='/contact-us' href="" className={styles.navLinks}>
-                Contact Us
-              </Link>
-            </li>
-            <li className={styles.navLinkContainer}>
-              <div className={styles.underline}></div>
               <Link to='/about-us' href="" className={styles.navLinks}>
                 About Us
               </Link>

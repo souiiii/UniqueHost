@@ -1,0 +1,143 @@
+.parent {
+  width: 100%;
+  background: linear-gradient(var(--backgrnd1), var(--backgrnd2));
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 5rem;
+  padding-top: 8rem;
+  position: relative;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.aboutContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1700px;
+}
+
+.heading {
+  color: var(--text-prim);
+  font-family: Afacad;
+  text-align: center;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 99.027%;
+  margin-bottom: 2rem;
+}
+
+.desc {
+  color: var(--text-prim);
+  text-align: center;
+  font-family: Afacad;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 31.2px */
+  max-width: 1000px;
+  margin-bottom: 2rem;
+}
+
+.budget {
+  color: var(--prim-col);
+}
+
+.hosting {
+  color: var(--accent-col);
+}
+
+
+.button {
+    color: var(--text-prim);
+    font-family: Afacad;
+    background-color: #5865f2;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: fit-content;
+    margin-bottom: 10rem;
+    transition: all 0.2s ease;
+  }
+  
+  .ellipse{
+      fill: #5865f2;
+      transition: all 0.08s ease;
+  }
+  
+  .button:hover, .button:hover .ellipse{
+      fill: var(--accent-col);
+      background-color: var(--accent-col);
+  }
+  
+  .linkButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .discordDiv {
+    width: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .discordSvg {
+    width: 100%;
+  }
+
+  .note {
+    color: var(--text-prim);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    font-family: Afacad;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 1rem;
+  }
+  
+
+  
+
+  
+  @media screen and (max-width: 960px) {
+
+  
+    .heading {
+      font-size: 48px;
+    }
+  
+    .note {
+      font-size: 20px;
+    }
+  
+    .desc {
+      font-size: 24px;
+    }
+  
+    .button {
+      font-size: 28px;
+    }
+  }
+
+  @media screen and (max-width: 483px) {
+    .parent {
+      padding-inline: 1rem;
+    }
+
+    .desc{
+        font-size: 20px;
+    }
+  }

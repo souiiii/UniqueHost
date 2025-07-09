@@ -6,6 +6,7 @@
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .logoHighlightedText {
