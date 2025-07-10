@@ -41,3 +41,10 @@ body, html{
 .button:hover{
   background-color: var(--prim-col);
 }
+
+
+@media (max-width: 737px){
+  .social-icon{
+    font-size: 24px;
+  }
+}
