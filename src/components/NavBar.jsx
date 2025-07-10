@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import LogoDiv from './LogoDiv';
 import styles from './NavBar.module.css';
 import { useState } from 'react';
@@ -14,27 +14,27 @@ export default function NavBar() {
           <ul className={styles.navLinkDiv}>
             <li className={styles.navLinkContainer}>
               <div className={styles.underline}></div>
-              <Link to="/" href="" className={styles.navLinks}>
+              <NavLink to="/" href="" className={styles.navLinks}>
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className={styles.navLinkContainer}>
               <div className={styles.underline}></div>
-              <Link to="/hostings" href="" className={styles.navLinks}>
+              <NavLink to="/hostings" href="" className={styles.navLinks}>
                 Hosting Plans
-              </Link>
+              </NavLink>
             </li>
             <li className={styles.navLinkContainer}>
               <div className={styles.underline}></div>
-              <Link to="/website-builder" href="" className={styles.navLinks}>
+              <NavLink to="/website-builder" href="" className={styles.navLinks}>
                 Website Builder
-              </Link>
+              </NavLink>
             </li>
             <li className={styles.navLinkContainer}>
               <div className={styles.underline}></div>
-              <Link to="/about-us" href="" className={styles.navLinks}>
+              <NavLink to="/about-us" href="" className={styles.navLinks}>
                 About Us
-              </Link>
+              </NavLink>
             </li>
           </ul>
 
