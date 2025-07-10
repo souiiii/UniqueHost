@@ -6,14 +6,14 @@ export default function Build() {
       <div className={styles.container}>
         <div className={styles.headingDiv}>
           <div className={styles.imgDiv}>
-            <img className={styles.img} />
+            <img src="/left.png" className={`${styles.img} ${styles.left}`} />
           </div>
           <h1 className={styles.heading}>
-            <span className={styles.budget}>Let's</span> Build Your{" "}
+            <span className={styles.budget}>Let's</span>&nbsp;Build Your&nbsp;
             <span className={styles.hosting}>Website</span>
           </h1>
           <div className={styles.imgDiv}>
-            <img className={styles.img} />
+            <img src="/right.png" className={`${styles.img} ${styles.right}`} />
           </div>
         </div>
         <p className={styles.desc}>

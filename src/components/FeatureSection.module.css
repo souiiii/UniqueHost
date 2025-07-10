@@ -182,6 +182,12 @@
 .gridBox {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 0.5rem;
+  padding: 1rem;
+  flex-direction: column;
 }
 
 .gridBox1,
@@ -242,6 +248,32 @@
   background: linear-gradient(61deg, #443073 4.99%, #351e6b 95.94%);
 }
 
+.featureSvgDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 0.5rem;
+}
+
+.fontAwesome {
+  color: #bfaee9;
+  font-size: 48px;
+}
+
+.feature {
+  color: #7d66b3;
+  font-family: "Bricolage Grotesque";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 115%;
+}
+
+.highlightedFeature {
+  color: var(--text-prim);
+}
+
 @media screen and (max-width: 1676px) {
   /* .imgDiv {
       top: -22vh;
@@ -252,6 +284,10 @@
   .parent {
     grid-template-columns: 0.8fr 1fr;
     height: 750px;
+  }
+
+  .feature {
+    font-size: 18px;
   }
 
   .textDiv {
@@ -296,6 +332,10 @@
     height: 650px;
   }
 
+  .feature {
+    font-size: 14px;
+  }
+
   .img {
     width: 90%;
   }
@@ -323,6 +363,10 @@
 @media screen and (max-width: 1228px) {
   .parent {
     height: 550px;
+  }
+
+  .gridBox {
+    padding: 0.5rem;
   }
 
   .mainHeading {
@@ -356,6 +400,10 @@
     grid-template-rows: repeat(2, 100px);
   }
 
+  .feature {
+    font-size: 9px;
+  }
+
   .text {
     font-size: 24px;
   }
@@ -385,12 +433,20 @@
   .subHeading {
     font-size: 14px;
   }
+  .fontAwesome {
+    font-size: 36px;
+  }
 }
 
 @media screen and (max-width: 800px) {
   .parent {
     height: unset;
   }
+
+  .feature {
+    font-size: 16px;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -448,11 +504,19 @@
   .parent {
     padding-inline: 1rem;
   }
+
+  .feature {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 583px) {
   .grid {
     grid-template-rows: repeat(2, 125px);
+  }
+
+  .fontAwesome {
+    font-size: 40px;
   }
 }
 
@@ -460,6 +524,10 @@
   .grid {
     grid-template-rows: repeat(3, 150px);
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature {
+    font-size: 18px;
   }
 
   .gridBox1,
@@ -515,5 +583,10 @@
   .subHeading {
     text-align: center;
   }
+}
 
+@media (max-width: 400px) {
+  .feature {
+    font-size: 14px;
+  }
 }
