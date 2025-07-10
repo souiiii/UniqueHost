@@ -5,6 +5,7 @@
   align-items: center;
   background: linear-gradient(#27174df1, #281850);
   position: fixed;
+  flex-direction: column;
   padding: 1rem 2.5rem;
   z-index: 999;
 }
@@ -96,13 +97,13 @@
 
 }
 
-@media screen and (max-width: 1676px) {
+@media (max-width: 1676px) {
   .navLinks {
     font-size: 18px;
   }
 }
 
-@media screen and (max-width: 1486px) {
+@media (max-width: 1486px) {
   .navLinks {
     font-size: 16px;
   }
@@ -116,7 +117,7 @@
   }
 }
 
-@media screen and (max-width: 1058px) {
+@media (max-width: 1058px) {
   .parent {
     padding: 0.5rem 2rem;
   }
@@ -143,7 +144,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .navLinkDiv {
     display: none;
     cursor: pointer;
@@ -158,7 +159,7 @@
   }
 }
 
-@media screen and (max-width: 737px) {
+@media (max-width: 737px) {
   .parent {
     padding: 0.5rem 1rem;
   }

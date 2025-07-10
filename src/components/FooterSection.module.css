@@ -165,7 +165,7 @@
   padding-block: 1rem;
 }
 
-@media screen and (max-width: 1676px) {
+@media (max-width: 1676px) {
   .heading {
     font-size: 56px;
   }
@@ -174,7 +174,7 @@
   }
 }
 
-@media screen and (max-width: 1486px) {
+@media (max-width: 1486px) {
   .heading {
     font-size: 48px;
   }
@@ -214,18 +214,18 @@
   }
 }
 
-@media screen and (max-width: 1378px) {
+@media (max-width: 1378px) {
   .linkDiv {
     gap: 6rem;
     padding-inline: 5rem;
   }
 }
 
-@media screen and (max-width: 1228px) {
+@media (max-width: 1228px) {
   .linkDiv {
     padding-inline: 2rem;
   }
-  .footerImgDiv{
+  .footerImgDiv {
     width: 100%;
   }
 
@@ -262,12 +262,12 @@
   }
 }
 
-@media screen and (max-width: 1058px) {
+@media (max-width: 1058px) {
   .linkDiv {
     padding-inline: 1rem;
     gap: 3rem;
   }
-  .topFooterContainer  {
+  .topFooterContainer {
     padding-inline: 2.5rem;
   }
 
@@ -281,7 +281,7 @@
   } */
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
   .linkDiv {
     padding-inline: 1rem;
     gap: 2rem;
@@ -314,7 +314,6 @@
   .heading {
     font-size: 24px;
     margin-bottom: 0.5rem;
-
   }
   .desc {
     font-size: 14px;
@@ -322,13 +321,13 @@
   }
 }
 
-@media screen and (max-width: 737px) {
-  .linkDiv{
+@media (max-width: 737px) {
+  .linkDiv {
     padding-inline: 0;
     gap: 1rem;
   }
-  
-  .iconDiv{
+
+  .iconDiv {
     margin: 0.7rem;
   }
 
@@ -339,13 +338,11 @@
   .heading {
     font-size: 20px;
     margin-bottom: 0.5rem;
-
   }
   .desc {
     font-size: 12px;
     margin-bottom: 1.5rem;
   }
-
 
   .button {
     font-size: 14px;
@@ -356,42 +353,41 @@
   .buttonBgDiv {
     width: 180px;
   }
-  
-  .Div{
+
+  .Div {
     justify-content: center;
     gap: 1rem;
   }
 
-  .discord{
+  .discord {
     font-size: 10px;
   }
-
 }
 
-@media screen and (max-width: 603px) {
-  .topFooterContainer{
+@media (max-width: 603px) {
+  .topFooterContainer {
     padding-inline: 0rem;
   }
-  .iconDiv{
+  .iconDiv {
     margin-inline: 0rem;
     margin-block: 0.5rem;
   }
 
-  .linkDiv{
+  .linkDiv {
     padding-inline: 0;
     max-width: 350px;
-    gap:2.5rem;
+    gap: 2.5rem;
     justify-content: space-around;
   }
 
-  .discord{
+  .discord {
     display: none;
   }
 
-  .iconSvg{
+  .iconSvg {
     width: 30px;
   }
-  .Div{
+  .Div {
     justify-content: space-between;
   }
 
@@ -400,52 +396,65 @@
     margin-bottom: 1.5rem;
   }
 
-  .footerNoteDiv{
+  .footerNoteDiv {
     width: 70%;
-    margin-block: 0.7rem 0.7rem;
+    margin-block: 0.7rem 0.4rem;
   }
 
-  .footerNote{
+  .footerNote {
     font-size: 7px;
   }
-
 }
 
-@media screen and (max-width: 483px) {
-    .bottomFooterContainer{
-      padding-top: 1rem;
-    }
-    
-    .innerContainer{
-      min-height: fit-content;
-      justify-content: space-between;
-      height: 100%;
-      gap: 1.5rem;
-    }
+@media (max-width: 483px) {
+  .bottomFooterContainer {
+    padding-top: 1rem;
+  }
 
-    .heading{
-      font-size: 30px;
-      text-align: center;
-      padding-inline: 1rem;
-      margin-bottom: 1rem;
-    }
+  .innerContainer {
+    min-height: fit-content;
+    justify-content: space-between;
+    height: 100%;
+    gap: 1.5rem;
+  }
 
-    .desc {
-      font-size: 14px;
-      width: 90%;
-      margin-bottom: 1.5rem;
-    }
+  .heading {
+    font-size: 36px;
+    text-align: center;
+    padding-inline: 1rem;
+    margin-bottom: 1rem;
+  }
 
-    .button{
-      font-size: 20px;
-    }
+  .desc {
+    font-size: 14px;
+    width: 90%;
+    margin-bottom: 1.5rem;
+  }
 
-    .buttonBgDiv {
-      width: 280px;
-    }
-    
-    .iconDiv{
-      display: none;
-    }
+  .button {
+    font-size: 30px;
+    padding: 0.5rem 1rem;
+  }
+
+  .buttonBgDiv {
+    width: 365px;
+  }
+
+  .iconDiv {
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 383px) {
+  .button {
+    font-size: 25px;
+    padding: 0.5rem 1rem;
+  }
+
+  .buttonBgDiv {
+    width: 320px;
+  }
 
 }

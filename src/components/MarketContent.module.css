@@ -3,7 +3,8 @@
   background: linear-gradient(var(--backgrnd1), var(--backgrnd2));
   /* height: 100vh; */
   display: flex;
-  justify-content: center;
+  min-height: 100vh;
+  justify-content: start;
   align-items: center;
   padding-inline: 5rem;
   padding-top: 8rem;
@@ -175,6 +176,14 @@
 }
 
 @media screen and (max-width: 483px) {
+.parent{
+
+  padding-top: 5rem;
+}
+
+.heading{
+  margin-bottom: 2rem;
+}
   .desc {
     font-size: 20px;
   }
@@ -182,4 +191,14 @@
   .note {
     font-size: 16px;
   }
+
+  .button {
+    font-size: 28px;
+  }
+}
+
+
+
+@media screen and (max-width: 384px) {
+
 }

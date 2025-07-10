@@ -445,69 +445,75 @@
 }
 
 @media screen and (max-width: 603px) {
-  .parent{
+  .parent {
     padding-inline: 1rem;
   }
 }
 
 @media screen and (max-width: 583px) {
-  .grid{
+  .grid {
     grid-template-rows: repeat(2, 125px);
   }
 }
 
 @media screen and (max-width: 483px) {
-  .grid{
+  .grid {
     grid-template-rows: repeat(3, 150px);
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .gridBox1, .gridBox2{
+  .gridBox1,
+  .gridBox2 {
     grid-row: 1;
   }
-  .gridBox3, .gridBox4{
+  .gridBox3,
+  .gridBox4 {
     grid-row: 2;
   }
-  .gridBox5, .gridBox6{
+  .gridBox5,
+  .gridBox6 {
     grid-row: 3;
   }
 
-  .gridBox1, .gridBox3, .gridBox5{
+  .gridBox1,
+  .gridBox3,
+  .gridBox5 {
     grid-column: 1;
   }
 
-  .gridBox2, .gridBox4, .gridBox6{
+  .gridBox2,
+  .gridBox4,
+  .gridBox6 {
     grid-column: 2;
   }
 
-  .container{
+  .container {
     gap: 3rem;
   }
 
-  .container1{
+  .container1 {
     flex-direction: column;
     height: fit-content;
     gap: 2rem;
   }
 
-  .text{
+  .text {
     text-align: center;
     margin-inline: 1rem;
   }
 
-  .img{
-    width:90%;
+  .img {
+    width: 90%;
   }
 
   .text::after {
     top: -20%;
     left: -4%;
-    
   }
 
-  .mainHeading, .subHeading{
+  .mainHeading,
+  .subHeading {
     text-align: center;
   }
 
-  
 }

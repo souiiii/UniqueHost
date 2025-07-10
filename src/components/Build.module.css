@@ -1,0 +1,251 @@
+.parent {
+  width: 100%;
+  /* height: 100vh; */
+  background: linear-gradient(var(--backgrnd1), var(--backgrnd2));
+
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-inline: 5rem;
+  padding-top: 8rem;
+  position: relative;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1700px;
+}
+
+.headingDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  color: var(--text-prim);
+  font-family: Afacad;
+  text-align: center;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 99.027%;
+  margin-bottom: 2rem;
+}
+
+.desc {
+  color: var(--text-prim);
+  text-align: center;
+  font-family: Afacad;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 31.2px */
+  max-width: 1000px;
+  margin-bottom: 2rem;
+}
+
+.budget {
+  color: var(--prim-col);
+}
+
+.hosting {
+  color: var(--accent-col);
+}
+
+.personalDescDiv {
+  border-radius: 15px;
+  background: #381e74;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.personalDesc {
+  color: var(--text-prim);
+  
+  text-align: center;
+  font-family: Afacad;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+.personalDesc2 {
+    color: var(--text-prim);
+    text-align: center;
+    font-family: Afacad;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1rem;
+    max-width: 500px;
+  }
+
+.button {
+  color: var(--text-prim);
+  font-family: Afacad;
+  background-color: #5865f2;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: fit-content;
+  transition: all 0.2s ease;
+  margin-bottom: 1.5rem;
+}
+
+.buttonPort{
+    background-color: var(--accent-col);
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+    padding-block: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+}
+
+
+
+.profileDiv{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile{
+    width: 100%;
+}
+
+.buttonText{
+    font-size: 30px;
+}
+
+.portfolioLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    text-decoration: none;
+    color: var(--text-prim);
+}
+
+.chillDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 1rem;
+}
+
+.chillPng{
+    width: 100%;
+}
+
+.ellipse {
+  fill: #5865f2;
+  transition: all 0.08s ease;
+}
+
+.button:hover,
+.button:hover .ellipse {
+  fill: var(--accent-col);
+  background-color: var(--accent-col);
+}
+
+.linkButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.discordDiv {
+  width: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discordSvg {
+  width: 100%;
+}
+
+.buttonPort:hover{
+    background-color: var(--prim-col);
+}
+
+@media screen and (max-width: 733px)  {
+    .heading {
+        font-size: 48px;
+      }
+    
+      .note {
+        font-size: 20px;
+      }
+    
+      .desc {
+        font-size: 24px;
+      }
+
+      .personalDesc, .personalDesc2{
+        font-size: 20px;
+      }
+    
+      .button, .buttonText {
+        font-size: 28px;
+      }
+  
+      .parent {
+        padding-inline: 1rem;
+        padding-top: 5rem;
+      }
+}
+
+@media screen and (max-width: 483px) {
+   
+    
+    .desc{
+        font-size: 20px;
+    }
+
+    .personalDesc, .personalDesc2{
+        font-size: 18px;
+    }
+
+    .profileDiv{
+        width: 36px;
+        height: 36px;
+    }
+  
+
+    .personalDescDiv{
+        padding: 1rem
+    }
+  }

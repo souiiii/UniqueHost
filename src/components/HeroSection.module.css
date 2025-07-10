@@ -382,8 +382,36 @@
 
 @media screen and (max-width: 484px) {
   .parent {
-    height: 500px;
+    height: 550px;
     align-items: end;
     padding-block: 2rem;
+  }
+
+  .artifacts{
+    top: -25%;
+  }
+
+  .description{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 384px) {
+  .heading{
+    font-size: 40px;
+  }
+
+  .description{
+    font-size: 18px;
+  }
+
+  .shadow, .getStartedButton{
+    font-size: 20px;
+    padding-inline: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    max-height: 50px;
   }
 }

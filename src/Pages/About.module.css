@@ -3,4 +3,7 @@
     position: relative;
     /* overflow-x: hidden; */
     padding-bottom: env(safe-area-inset-bottom);
+  background: linear-gradient(var(--backgrnd1), var(--backgrnd2));
+    
 }
+

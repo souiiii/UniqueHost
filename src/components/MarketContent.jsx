@@ -25,7 +25,7 @@ export default function MarketContent() {
           >
             Copper Plan
           </HostingPlans>
-          <HostingPlans price="280" cpu="250" img="/IRON.webp" ram="8" ssd="35">
+          <HostingPlans price="280" cpu="250" img="/IRON.png" ram="8" ssd="35">
             Iron Plan
           </HostingPlans>
           <HostingPlans

@@ -1,7 +1,11 @@
 .parent {
   width: 100%;
-  background: linear-gradient(var(--backgrnd1), var(--backgrnd2));
   /* height: 100vh; */
+  background: url("/aboutbg.png");
+  background-blend-mode: darken;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,91 +57,87 @@
   color: var(--accent-col);
 }
 
-
 .button {
-    color: var(--text-prim);
-    font-family: Afacad;
-    background-color: #5865f2;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    width: fit-content;
-    margin-bottom: 10rem;
-    transition: all 0.2s ease;
-  }
-  
-  .ellipse{
-      fill: #5865f2;
-      transition: all 0.08s ease;
-  }
-  
-  .button:hover, .button:hover .ellipse{
-      fill: var(--accent-col);
-      background-color: var(--accent-col);
-  }
-  
-  .linkButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  .discordDiv {
-    width: 56px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .discordSvg {
-    width: 100%;
+  color: var(--text-prim);
+  font-family: Afacad;
+  background-color: #5865f2;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: fit-content;
+  margin-bottom: 10rem;
+  transition: all 0.2s ease;
+}
+
+.ellipse {
+  fill: #5865f2;
+  transition: all 0.08s ease;
+}
+
+.button:hover,
+.button:hover .ellipse {
+  fill: var(--accent-col);
+  background-color: var(--accent-col);
+}
+
+.linkButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.discordDiv {
+  width: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discordSvg {
+  width: 100%;
+}
+
+.note {
+  color: var(--text-prim);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  font-family: Afacad;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 960px) {
+  .heading {
+    font-size: 48px;
   }
 
   .note {
-    color: var(--text-prim);
-    text-align: center;
-    width: 100%;
-    max-width: 500px;
-    font-family: Afacad;
+    font-size: 20px;
+  }
+
+  .desc {
     font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 1rem;
-  }
-  
-
-  
-
-  
-  @media screen and (max-width: 960px) {
-
-  
-    .heading {
-      font-size: 48px;
-    }
-  
-    .note {
-      font-size: 20px;
-    }
-  
-    .desc {
-      font-size: 24px;
-    }
-  
-    .button {
-      font-size: 28px;
-    }
   }
 
-  @media screen and (max-width: 483px) {
-    .parent {
-      padding-inline: 1rem;
-    }
-
-    .desc{
-        font-size: 20px;
-    }
+  .button {
+    font-size: 28px;
   }
+
+  .parent {
+    padding-inline: 1rem;
+    background: none;
+  }
+}
+
+@media screen and (max-width: 483px) {
+
+  .desc {
+    font-size: 20px;
+  }
+}

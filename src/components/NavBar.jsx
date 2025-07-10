@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
 import LogoDiv from './LogoDiv';
 import styles from './NavBar.module.css';
+import { useState } from 'react';
+import Menu from './Menu';
 
 export default function NavBar() {
+  const [navView, setNavView] = useState(false);
   return (
     <div className={styles.parent}>
       <div className={styles.container}>
@@ -47,7 +50,7 @@ export default function NavBar() {
               </svg>
             </div>
           </Link>
-          <div className={styles.svgDiv}>
+          <div onClick={()=>setNavView((view)=>(!view))} className={styles.svgDiv}>
             <svg
               className={styles.svg}
               xmlns="http://www.w3.org/2000/svg"
@@ -61,6 +64,7 @@ export default function NavBar() {
           </div>
         </div>
       </div>
+      {navView && <Menu/>}
     </div>
   );
 }

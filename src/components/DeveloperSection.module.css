@@ -296,7 +296,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .container{
+  .container {
     height: 180px;
     margin-bottom: 6rem;
   }
@@ -306,7 +306,7 @@
     font-size: 14px;
   }
 
-  .heading{
+  .heading {
     font-size: 16px;
   }
 
@@ -326,19 +326,18 @@
     /* height: 350px; */
   }
 
-  .testContainer{
+  .testContainer {
     max-width: 45%;
     background-color: #381e74;
   }
-  
 }
 
 @media screen and (max-width: 737px) {
-  .container{
+  .container {
     height: 160px;
   }
 
-  .imgWrapper{
+  .imgWrapper {
     padding-inline: 1rem;
   }
 
@@ -349,35 +348,30 @@
     min-width: fit-content;
   }
 
-  .heading{
+  .heading {
     font-size: 14px;
   }
 
-  .testContainer{
+  .testContainer {
     min-width: 300px;
     width: 80%;
     max-width: unset;
   }
 
-  .desc{
+  .desc {
     max-width: 400px;
   }
- 
 }
 
 @media screen and (max-width: 603px) {
-  .parent{
+  .parent {
     padding-inline: 1rem;
     padding-block: 4rem;
   }
-
-
-
-
 }
 
 @media screen and (max-width: 483px) {
-  .container{
+  .container {
     height: unset;
     margin-bottom: 5rem;
     /* background: unset; */
@@ -386,44 +380,49 @@
     /* gap: 0.5rem; */
     border-radius: 40px;
   }
-  
-  .actionDiv{
+
+  .actionDiv {
     height: 200px;
     order: 1;
-
   }
 
-  .imgWrapper{
+  .imgWrapper {
     padding-inline: 0.2rem;
     order: 2;
   }
-  .textDiv{
+  .textDiv {
     padding: 1rem;
   }
 
-  .heading{
+  .heading {
     font-size: 18px;
   }
 
-  .testContainer{
+  .testContainer {
     width: 100%;
   }
 
-  .name{
+  .name {
     font-size: 28px;
   }
 
-  .desc{
-    font-size: 16px;
+  .desc {
+    font-size: 18px;
   }
 
-  .commaDiv{
+  .commaDiv {
     width: 60px;
     top: -5%;
-
   }
 
-  .button{
+  .button {
+    font-size: 16px;
+  }
+}
+
+
+@media screen and (max-width: 383px) {
+  .desc {
     font-size: 16px;
   }
 }

@@ -8,6 +8,14 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+body, html{
+  background-color: transparent;
+  background: transparent;
+  overscroll-behavior:none;
+  background: linear-gradient(var(--backgrnd1), var(--backgrnd2));
+
+}
+
 #root{
   width: 100%;
 }
