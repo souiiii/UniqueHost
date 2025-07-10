@@ -9,8 +9,8 @@ export default function Build() {
             <img src="/left.png" className={`${styles.img} ${styles.left}`} />
           </div>
           <h1 className={styles.heading}>
-            <span className={styles.budget}>Let's</span>&nbsp;Build Your&nbsp;
-            <span className={styles.hosting}>Website</span>
+            <span className={styles.budget}>Let's </span>Build Your
+            <span className={styles.hosting}> Website</span>
           </h1>
           <div className={styles.imgDiv}>
             <img src="/right.png" className={`${styles.img} ${styles.right}`} />
@@ -37,7 +37,11 @@ export default function Build() {
             <a className={styles.socialLinks}>Discord</a> to get started.
           </p>
           <button className={`button ${styles.button} ${styles.buttonPort}`}>
-            <a target="_blank" href="https://www.meshahid.me/" className={styles.portfolioLink}>
+            <a
+              target="_blank"
+              href="https://www.meshahid.me/"
+              className={styles.portfolioLink}
+            >
               <div className={styles.profileDiv}>
                 <img src="/profile.jpg" className={styles.profile} />
               </div>
@@ -46,7 +50,7 @@ export default function Build() {
           </button>
         </div>
         <div className={styles.chillDiv}>
-            <img className={styles.chillPng} src="/websiteChill.png"/>
+          <img className={styles.chillPng} src="/websiteChill.png" />
         </div>
         <button className={`button ${styles.button}`}>
           <a className={styles.linkButton}>
