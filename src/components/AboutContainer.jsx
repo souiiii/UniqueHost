@@ -58,6 +58,7 @@ export default function AboutContainer() {
             Discord→
           </a>
         </button>
+        <div className={styles.aboutLoveDiv}><img className={styles.aboutLove} src="/aboutlove.png"/></div>
         <p className={styles.note}>
           Have questions or need support?{" "}
           <span className={styles.hosting}>Reach out</span>! Our support team is

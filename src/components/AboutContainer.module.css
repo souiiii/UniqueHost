@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding-inline: 5rem;
   padding-top: 8rem;
@@ -66,7 +66,7 @@
   font-weight: 700;
   line-height: normal;
   width: fit-content;
-  margin-bottom: 10rem;
+  margin-bottom: 2rem;
   transition: all 0.2s ease;
 }
 
@@ -96,6 +96,18 @@
 }
 
 .discordSvg {
+  width: 100%;
+}
+
+.aboutLoveDiv{
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.aboutLove{
   width: 100%;
 }
 
@@ -136,6 +148,13 @@
 }
 
 @media screen and (max-width: 483px) {
+  .button{
+    /* margin-bottom: 5rem; */
+  }
+  .parent{
+  padding-top: 5rem;
+
+  }
 
   .desc {
     font-size: 20px;

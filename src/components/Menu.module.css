@@ -1,4 +1,44 @@
-.parent{
-    color: white;
-    font-size: 30px;
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  max-width: 1800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.links {
+  position: relative;
+  color: var(--text-prim);
+  font-family: Afacad;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.underline {
+  width: 0%;
+  height: 2px;
+  background-color: var(--prim-col);
+  position: absolute;
+  bottom: -5%;
+  transition: all 0.2s ease-out;
+}
+
+:global(.active) .underline {
+  width: 50%;
 }
