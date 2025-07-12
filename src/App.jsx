@@ -13,12 +13,11 @@ import WebsiteBuilder from "./Pages/WebsiteBuilder";
 import Contact from "./Pages/Contact";
 import About from "./Pages/About";
 import FourOFour from "./components/FourOFour";
+import ScrollToTop from "./components/ScrollToTop";
+import { lenis } from "./lenisInstance";
 
 function App() {
-  const lenis = new Lenis({
-    duration: 1.0, // lower duration = snappier (default is ~1.2)
-    easing: (t) => t, // linear easing, no extra lag
-  });
+ 
 
   useEffect(() => {
     if (!lenis) return;
@@ -31,13 +30,16 @@ function App() {
     requestAnimationFrame(raf);
   }, [lenis]);
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/hostings" element={<Hostings />} />
-      <Route path="/website-builder" element={<WebsiteBuilder />} />
-      <Route path="/about-us" element={<About />} />
-      <Route path="*" element={<FourOFour/>}/>
-    </Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/hostings" element={<Hostings />} />
+        <Route path="/website-builder" element={<WebsiteBuilder />} />
+        <Route path="/about-us" element={<About />} />
+        <Route path="*" element={<FourOFour />} />
+      </Routes>
+    </>
   );
 }
 

@@ -9,10 +9,10 @@ import {
   faGem,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function FeatureSection() {
+export default function FeatureSection({featureRef}) {
   return (
     <div className={styles.parent}>
-      <div className={styles.container}>
+      <div ref={featureRef} className={styles.container}>
         <div className={styles.container1}>
           <div className={styles.imgDiv}>
             <img

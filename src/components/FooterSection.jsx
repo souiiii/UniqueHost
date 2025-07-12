@@ -7,10 +7,10 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
-export default function FooterSection() {
+export default function FooterSection({footerRef1, footerRef2}) {
   return (
     <div className={styles.parent}>
-      <div className={styles.topFooterContainer}>
+      <div ref={footerRef1} className={styles.topFooterContainer}>
         <div className={styles.footerImgDiv}>
           <img
             src="https://ik.imagekit.io/kyayaarshahid/footer.webp"
@@ -28,7 +28,7 @@ export default function FooterSection() {
           online in minutes with Unique Hosting!
         </p>
       </div>
-      <div className={styles.bottomFooterContainer}>
+      <div ref={footerRef2} className={styles.bottomFooterContainer}>
         <div className={styles.innerContainer}>
           <div className={styles.linkDiv}>
             <div className={styles.Div}>

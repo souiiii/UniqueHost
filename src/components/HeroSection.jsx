@@ -1,9 +1,11 @@
 import styles from "./HeroSection.module.css";
 
-export default function HeroSection() {
+export default function HeroSection({
+  heroRef
+}) {
   return (
     <div className={styles.parent}>
-      <div className={styles.container}>
+      <div ref={heroRef} className={styles.container}>
         <div className={styles.mainContainer}>
           <h1 className={styles.heading}>
             <span className={styles.primaryHighlightedText}>Simple </span>&{" "}

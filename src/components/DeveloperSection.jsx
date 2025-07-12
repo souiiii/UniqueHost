@@ -1,10 +1,11 @@
 import styles from "./DeveloperSection.module.css";
 import Star from "./Star";
 
-export default function DeveloperSection() {
+export default function DeveloperSection({devRef1, devRef2
+}) {
   return (
     <div className={styles.parent}>
-      <div className={styles.container}>
+      <div ref={devRef1} className={styles.container}>
         <div className={styles.imgWrapper}>
           <img
             className={styles.img}
@@ -20,7 +21,7 @@ export default function DeveloperSection() {
           </div>
         </div>
       </div>
-      <div className={styles.testimonialContainer}>
+      <div ref={devRef2} className={styles.testimonialContainer}>
         <h1 className={styles.heading2}>
           What our <span className={styles.clients}>Clients</span> Say!
         </h1>
