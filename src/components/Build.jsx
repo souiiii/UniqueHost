@@ -43,7 +43,7 @@ export default function Build() {
               className={styles.portfolioLink}
             >
               <div className={styles.profileDiv}>
-                <img src="/profile.jpg" className={styles.profile} />
+                <img src="/profile.webp" className={styles.profile} />
               </div>
               <h1 className={styles.buttonText}>Portfolio→</h1>
             </a>
