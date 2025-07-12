@@ -15,7 +15,7 @@ export default function FeatureSection() {
       <div className={styles.container}>
         <div className={styles.container1}>
           <div className={styles.imgDiv}>
-            <img className={styles.img} src="/minefeature.png" />
+            <img className={styles.img} src="/minefeature.webp" />
           </div>
           <div className={styles.textDiv}>
             <h1 className={styles.text}>

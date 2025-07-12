@@ -46,7 +46,7 @@ export default function HeroSection() {
         </div>
         <div className={styles.imgDiv}>
 
-        <img className={styles.img} src="/kindd.png"></img>
+        <img className={styles.img} src="/kindd.webp"></img>
         </div>
       </div>
       <div className={styles.artifacts}>

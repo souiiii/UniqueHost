@@ -13,7 +13,7 @@ export default function MarketContent() {
           <span className={styles.hosting}>Everyone</span>
         </p>
         <div className={styles.hostingGridContainer}>
-          <HostingPlans price="140" cpu="150" img="/COAL.png" ram="4" ssd="25">
+          <HostingPlans price="140" cpu="150" img="/COAL.webp" ram="4" ssd="25">
             Coal Plan
           </HostingPlans>
           <HostingPlans
@@ -25,7 +25,7 @@ export default function MarketContent() {
           >
             Copper Plan
           </HostingPlans>
-          <HostingPlans price="280" cpu="250" img="/IRON.png" ram="8" ssd="35">
+          <HostingPlans price="280" cpu="250" img="/IRON.webp" ram="8" ssd="35">
             Iron Plan
           </HostingPlans>
           <HostingPlans

@@ -76,7 +76,7 @@
 .text::after {
   content: "";
   position: absolute;
-  background-image: url("../../public/comma.png");
+  background-image: url("../../public/comma.webp");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

@@ -6,7 +6,7 @@ export default function DeveloperSection() {
     <div className={styles.parent}>
       <div className={styles.container}>
         <div className={styles.imgWrapper}>
-          <img className={styles.img} src="/wow.png" />
+          <img className={styles.img} src="/wow.webp" />
         </div>
         <div className={styles.actionDiv}>
           <div className={styles.textDiv}>

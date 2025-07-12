@@ -12,7 +12,7 @@ export default function FooterSection() {
     <div className={styles.parent}>
       <div className={styles.topFooterContainer}>
         <div className={styles.footerImgDiv}>
-          <img src="/footer.png" className={styles.footerImg} />
+          <img src="/footer.webp" className={styles.footerImg} />
         </div>
         <h1 className={styles.heading}>
           Create your very own{" "}
@@ -49,7 +49,7 @@ export default function FooterSection() {
             </div>
             <div className={styles.buttonDiv}>
               <div className={styles.buttonBgDiv}>
-                <img src="/buttonbg.png" className={styles.buttonBg} />
+                <img src="/buttonbg.webp" className={styles.buttonBg} />
               </div>
               <button className={`button ${styles.button}`}>Order Now →</button>
             </div>
