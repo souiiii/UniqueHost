@@ -6,14 +6,20 @@ export default function Build() {
       <div className={styles.container}>
         <div className={styles.headingDiv}>
           <div className={styles.imgDiv}>
-            <img src="/left.webp" className={`${styles.img} ${styles.left}`} />
+            <img
+              src="https://ik.imagekit.io/kyayaarshahid/left.webp"
+              className={`${styles.img} ${styles.left}`}
+            />
           </div>
           <h1 className={styles.heading}>
             <span className={styles.budget}>Let's </span>Build Your
             <span className={styles.hosting}> Website</span>
           </h1>
           <div className={styles.imgDiv}>
-            <img src="/right.webp" className={`${styles.img} ${styles.right}`} />
+            <img
+              src="https://ik.imagekit.io/kyayaarshahid/right.webp"
+              className={`${styles.img} ${styles.right}`}
+            />
           </div>
         </div>
         <p className={styles.desc}>
@@ -43,14 +49,20 @@ export default function Build() {
               className={styles.portfolioLink}
             >
               <div className={styles.profileDiv}>
-                <img src="/profile.webp" className={styles.profile} />
+                <img
+                  src="https://ik.imagekit.io/kyayaarshahid/profile.webp"
+                  className={styles.profile}
+                />
               </div>
               <h1 className={styles.buttonText}>Portfolio→</h1>
             </a>
           </button>
         </div>
         <div className={styles.chillDiv}>
-          <img className={styles.chillPng} src="/websiteChill.webp" />
+          <img
+            className={styles.chillPng}
+            src="https://ik.imagekit.io/kyayaarshahid/websiteChill.webp"
+          />
         </div>
         <button className={`button ${styles.button}`}>
           <a className={styles.linkButton}>

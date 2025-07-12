@@ -13,7 +13,7 @@ export default function MarketContent() {
           <span className={styles.hosting}>Everyone</span>
         </p>
         <div className={styles.hostingGridContainer}>
-          <HostingPlans price="140" cpu="150" img="/COAL.webp" ram="4" ssd="25">
+          <HostingPlans price="140" cpu="150" img="https://ik.imagekit.io/kyayaarshahid/COAL.webp" ram="4" ssd="25">
             Coal Plan
           </HostingPlans>
           <HostingPlans
@@ -25,13 +25,13 @@ export default function MarketContent() {
           >
             Copper Plan
           </HostingPlans>
-          <HostingPlans price="280" cpu="250" img="/IRON.webp" ram="8" ssd="35">
+          <HostingPlans price="280" cpu="250" img="https://ik.imagekit.io/kyayaarshahid/IRON.webp" ram="8" ssd="35">
             Iron Plan
           </HostingPlans>
           <HostingPlans
             price="350"
             cpu="300"
-            img="/GOLD.webp"
+            img="https://ik.imagekit.io/kyayaarshahid/GOLD.webp"
             ram="10"
             ssd="50"
           >
@@ -40,7 +40,7 @@ export default function MarketContent() {
           <HostingPlans
             price="420"
             cpu="350"
-            img="/REDSTONE.webp"
+            img="https://ik.imagekit.io/kyayaarshahid/REDSTONE.webp"
             ram="12"
             ssd="55"
           >
@@ -49,7 +49,7 @@ export default function MarketContent() {
           <HostingPlans
             price="490"
             cpu="400"
-            img="/LAPIS.webp"
+            img="https://ik.imagekit.io/kyayaarshahid/LAPIS.webp"
             ram="14"
             ssd="57"
           >
@@ -58,7 +58,7 @@ export default function MarketContent() {
           <HostingPlans
             price="560"
             cpu="450"
-            img="/NETHERITE.webp"
+            img="https://ik.imagekit.io/kyayaarshahid/NETHERITE.webp"
             ram="16"
             ssd="60"
           >
@@ -67,7 +67,7 @@ export default function MarketContent() {
           <HostingPlans
             price="1200"
             cpu="150"
-            img="/DIAMOND.webp"
+            img="https://ik.imagekit.io/kyayaarshahid/DIAMOND.webp"
             ram="32"
             ssd="100"
             vps={true}

@@ -45,8 +45,10 @@ export default function HeroSection() {
           </div>
         </div>
         <div className={styles.imgDiv}>
-
-        <img className={styles.img} src="/kindd.webp"></img>
+          <img
+            className={styles.img}
+            src="https://ik.imagekit.io/kyayaarshahid/kindd.webp"
+          ></img>
         </div>
       </div>
       <div className={styles.artifacts}>

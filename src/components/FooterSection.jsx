@@ -12,7 +12,10 @@ export default function FooterSection() {
     <div className={styles.parent}>
       <div className={styles.topFooterContainer}>
         <div className={styles.footerImgDiv}>
-          <img src="/footer.webp" className={styles.footerImg} />
+          <img
+            src="https://ik.imagekit.io/kyayaarshahid/footer.webp"
+            className={styles.footerImg}
+          />
         </div>
         <h1 className={styles.heading}>
           Create your very own{" "}
@@ -32,7 +35,7 @@ export default function FooterSection() {
               <div className={styles.iconDiv}>
                 <FontAwesomeIcon
                   icon={faInstagram}
-                  fontSize='30px'
+                  fontSize="30px"
                   className="social-icon instagram"
                 />
 
@@ -41,7 +44,7 @@ export default function FooterSection() {
               <div className={styles.iconDiv}>
                 <FontAwesomeIcon
                   icon={faDiscord}
-                  fontSize='30px'
+                  fontSize="30px"
                   className="social-icon discord"
                 />
                 <div className={styles.discord}>Discord</div>
@@ -49,7 +52,10 @@ export default function FooterSection() {
             </div>
             <div className={styles.buttonDiv}>
               <div className={styles.buttonBgDiv}>
-                <img src="/buttonbg.webp" className={styles.buttonBg} />
+                <img
+                  src="https://ik.imagekit.io/kyayaarshahid/buttonbg.webp"
+                  className={styles.buttonBg}
+                />
               </div>
               <button className={`button ${styles.button}`}>Order Now →</button>
             </div>
@@ -57,7 +63,7 @@ export default function FooterSection() {
               <div className={styles.iconDiv}>
                 <FontAwesomeIcon
                   icon={faTwitter}
-                  fontSize='30px'
+                  fontSize="30px"
                   className="social-icon twitter"
                 />
                 <div className={styles.discord}>Twitter</div>
@@ -65,7 +71,7 @@ export default function FooterSection() {
               <div className={styles.iconDiv}>
                 <FontAwesomeIcon
                   icon={faYoutube}
-                  fontSize='30px'
+                  fontSize="30px"
                   className="social-icon youtube"
                 />
                 <div className={styles.discord}>Youtube</div>
