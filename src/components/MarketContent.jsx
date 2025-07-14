@@ -93,7 +93,7 @@ export default function MarketContent() {
           </HostingPlans>
           <HostingPlans
             price="1200"
-            cpu="150"
+            cpu="600"
             img="https://ik.imagekit.io/kyayaarshahid/DIAMOND.webp"
             ram="32"
             ssd="100"
