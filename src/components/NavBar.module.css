@@ -167,6 +167,11 @@
     cursor: pointer;
   }
 
+  
+:global(.active)::after{
+  display: none;
+}
+
   .rightNavDiv{
     gap: 1rem;
   }
