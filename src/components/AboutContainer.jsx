@@ -78,6 +78,8 @@ export default function AboutContainer() {
           <img
             className={styles.aboutLove}
             src="https://ik.imagekit.io/kyayaarshahid/aboutlove.webp"
+            loading="lazy"
+            alt="minecraft man with flower"
           />
         </div>
         <p className={styles.note}>

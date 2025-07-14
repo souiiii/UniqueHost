@@ -21,6 +21,8 @@ export default function Build() {
           <div className={styles.imgDiv}>
             <img
               src="https://ik.imagekit.io/kyayaarshahid/left.webp"
+              loading="lazy"
+              alt="left builder"
               className={`${styles.img} ${styles.left}`}
             />
           </div>
@@ -31,6 +33,8 @@ export default function Build() {
           <div className={styles.imgDiv}>
             <img
               src="https://ik.imagekit.io/kyayaarshahid/right.webp"
+              loading="lazy"
+              alt="right builder"
               className={`${styles.img} ${styles.right}`}
             />
           </div>
@@ -92,6 +96,8 @@ export default function Build() {
               <div className={styles.profileDiv}>
                 <img
                   src="https://ik.imagekit.io/kyayaarshahid/profile.webp"
+                  loading="lazy"
+                  alt="profile pic of shahid"
                   className={styles.profile}
                 />
               </div>
@@ -103,6 +109,8 @@ export default function Build() {
           <img
             className={styles.chillPng}
             src="https://ik.imagekit.io/kyayaarshahid/websiteChill.webp"
+            loading="lazy"
+            alt="minecraft man running joyfully"
           />
         </div>
         <button className={`button ${styles.button}`}>

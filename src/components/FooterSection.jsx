@@ -15,6 +15,8 @@ export default function FooterSection({footerRef1, footerRef2}) {
         <div className={styles.footerImgDiv}>
           <img
             src="https://ik.imagekit.io/kyayaarshahid/footer.webp"
+            loading="lazy"
+            alt="roblox characters assemble"
             className={styles.footerImg}
           />
         </div>
@@ -58,7 +60,9 @@ export default function FooterSection({footerRef1, footerRef2}) {
                   className={styles.buttonBg}
                 />
               </div>
-              <Link to='/hostings' className={`button ${styles.button}`}>Order Now →</Link>
+              <Link to="/hostings" className={`button ${styles.button}`}>
+                Order Now →
+              </Link>
             </div>
             <div className={styles.Div}>
               <div className={styles.iconDiv}>

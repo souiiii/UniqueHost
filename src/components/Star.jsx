@@ -6,6 +6,8 @@ export default function Star() {
       <img
         className={styles.img}
         src="https://ik.imagekit.io/kyayaarshahid/star.webp"
+        loading="lazy"
+        alt="stars"
       />
     </div>
   );

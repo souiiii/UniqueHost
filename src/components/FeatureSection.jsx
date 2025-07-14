@@ -18,6 +18,8 @@ export default function FeatureSection({featureRef}) {
             <img
               className={styles.img}
               src="https://ik.imagekit.io/kyayaarshahid/minefeature.webp"
+              loading="lazy"
+              alt="mincraft characters assemble"
             />
           </div>
           <div className={styles.textDiv}>

@@ -6,7 +6,12 @@ export default function HostingPlans({children, price, ram, cpu, ssd, vps=false,
       <div className={`${styles.vps} ${!vps && styles.visible}`}>VPS</div>
       <h1 className={styles.hostingName}>{children}</h1>
       <div className={styles.hostingImageDiv}>
-        <img className={styles.hostingImage} src={img} />
+        <img
+          className={styles.hostingImage}
+          loading="lazy"
+          alt="block image"
+          src={img}
+        />
       </div>
       <div className={styles.price}>Rs. {price} / month</div>
       <div className={styles.hostingDetailsDiv}>
@@ -22,7 +27,8 @@ export default function HostingPlans({children, price, ram, cpu, ssd, vps=false,
           <div className={styles.hostingDetailSvgContainer}></div>
           <p className={styles.hostingDetailText}>{ssd} GB NVME SSD</p>
         </div>
-        <a target='_blank'
+        <a
+          target="_blank"
           href="https://discord.com/invite/PtyfbrV5Px"
           className={`button ${styles.button}`}
         >

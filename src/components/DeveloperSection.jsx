@@ -11,6 +11,8 @@ export default function DeveloperSection({devRef1, devRef2
           <img
             className={styles.img}
             src="https://ik.imagekit.io/kyayaarshahid/wow.webp"
+            loading="lazy"
+            alt="website build catchphrase"
           />
         </div>
         <div className={styles.actionDiv}>
@@ -36,6 +38,8 @@ export default function DeveloperSection({devRef1, devRef2
                 <div className={styles.commaDiv}>
                   <img
                     src="https://ik.imagekit.io/kyayaarshahid/comma.webp"
+                    loading="lazy"
+                    alt="comma"
                     className={styles.comma}
                   />
                 </div>
@@ -55,6 +59,8 @@ export default function DeveloperSection({devRef1, devRef2
                 <div className={styles.commaDiv}>
                   <img
                     src="https://ik.imagekit.io/kyayaarshahid/comma.webp"
+                    loading="lazy"
+                    alt="comma"
                     className={styles.comma}
                   />
                 </div>
@@ -75,6 +81,8 @@ export default function DeveloperSection({devRef1, devRef2
                 <div className={styles.commaDiv}>
                   <img
                     src="https://ik.imagekit.io/kyayaarshahid/comma.webp"
+                    loading="lazy"
+                    alt="comma"
                     className={styles.comma}
                   />
                 </div>
