@@ -1,9 +1,21 @@
+import { useEffect, useRef } from "react";
 import styles from "./AboutContainer.module.css";
+import gsap from "gsap";
 
 export default function AboutContainer() {
+  const about = useRef(null)
+
+  useEffect(() => {
+    gsap.fromTo(
+      about.current,
+      { opacity: 0 },
+      { opacity: 1, duration: 0.8, ease: "power1.inOut" }
+    );
+  }, []);
+
   return (
     <div className={styles.parent}>
-      <div className={styles.aboutContainer}>
+      <div ref={about} className={styles.aboutContainer}>
         <h1 className={styles.heading}>
           About <span className={styles.hosting}>Us</span>
         </h1>
@@ -24,7 +36,11 @@ export default function AboutContainer() {
         </p>
 
         <button className={`button ${styles.button}`}>
-          <a className={styles.linkButton}>
+          <a
+            href="https://discord.com/invite/PtyfbrV5Px"
+            target="_blank"
+            className={styles.linkButton}
+          >
             <span className={styles.discordDiv}>
               <svg
                 className={styles.discordSvg}

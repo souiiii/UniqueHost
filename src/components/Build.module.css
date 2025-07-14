@@ -195,7 +195,24 @@
   background-color: var(--accent-col);
 }
 
+.socialLinks, .profileLink{
+  color: inherit;
+  text-decoration-thickness: 3px;
+  text-decoration-style: solid;
+  text-underline-offset: 4px;
+}
+
+.socialLinks{
+  text-decoration-color: var(--prim-col);
+}
+
+.profileLink{
+  text-decoration-color: var(--accent-col);
+}
+
 .linkButton {
+  text-decoration: none;
+  color: inherit;
   display: flex;
   justify-content: center;
   align-items: center;

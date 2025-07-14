@@ -26,7 +26,7 @@ export default function Footer() {
         </a>
         <a
           className={styles.links}
-          href="https://discord.com/your-server"
+          href="https://discord.com/invite/PtyfbrV5Px"
           target="_blank"
           rel="noopener noreferrer"
         >

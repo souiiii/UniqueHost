@@ -3,7 +3,7 @@ import styles from './HostingPlans.module.css';
 export default function HostingPlans({children, price, ram, cpu, ssd, vps=false, img}) {
   return (
     <div className={styles.hostingContainer}>
-        <div className={`${styles.vps} ${!vps && styles.visible}`}>VPS</div>
+      <div className={`${styles.vps} ${!vps && styles.visible}`}>VPS</div>
       <h1 className={styles.hostingName}>{children}</h1>
       <div className={styles.hostingImageDiv}>
         <img className={styles.hostingImage} src={img} />
@@ -22,7 +22,12 @@ export default function HostingPlans({children, price, ram, cpu, ssd, vps=false,
           <div className={styles.hostingDetailSvgContainer}></div>
           <p className={styles.hostingDetailText}>{ssd} GB NVME SSD</p>
         </div>
-        <button className={`button ${styles.button}`}>Order Now→</button>
+        <a target='_blank'
+          href="https://discord.com/invite/PtyfbrV5Px"
+          className={`button ${styles.button}`}
+        >
+          Order Now→
+        </a>
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 export default function FooterSection({footerRef1, footerRef2}) {
   return (
@@ -57,7 +58,7 @@ export default function FooterSection({footerRef1, footerRef2}) {
                   className={styles.buttonBg}
                 />
               </div>
-              <button className={`button ${styles.button}`}>Order Now →</button>
+              <Link to='/hostings' className={`button ${styles.button}`}>Order Now →</Link>
             </div>
             <div className={styles.Div}>
               <div className={styles.iconDiv}>

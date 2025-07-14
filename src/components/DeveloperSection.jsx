@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./DeveloperSection.module.css";
 import Star from "./Star";
 
@@ -17,7 +18,9 @@ export default function DeveloperSection({devRef1, devRef2
             <span className={styles.heading}>
               Get a custom build website that caters to your needs!
             </span>
-            <button className={`button ${styles.button}`}>See Details→</button>
+            <Link to="/website-builder" className={`button ${styles.button}`}>
+              See Details→
+            </Link>
           </div>
         </div>
       </div>
@@ -36,13 +39,12 @@ export default function DeveloperSection({devRef1, devRef2
                     className={styles.comma}
                   />
                 </div>
-                Almighty Subham
+                Shadow Vortex
               </h1>
               <p className={styles.desc}>
-                “This is the cheapest and best hosting. The staff here talks
-                very well and also helps. If you are thinking of making a
-                personal SMP or your own public server, then unique hosting is
-                the best option. ❤️”
+                “Absolutely amazing hosting. The servers are lightning fast and
+                the UI is smooth. The support team actually cares. I’ve never
+                had such a stress-free experience setting up my SMP server. 🙌”
               </p>
             </div>
           </div>
@@ -76,13 +78,13 @@ export default function DeveloperSection({devRef1, devRef2
                     className={styles.comma}
                   />
                 </div>
-                Almighty Subham
+                Nexus Craft
               </h1>
               <p className={styles.desc}>
-                “This is the cheapest and best hosting. The staff here talks
-                very well and also helps. If you are thinking of making a
-                personal SMP or your own public server, then unique hosting is
-                the best option. ❤️”
+                “Honestly didn’t expect this level of service at this price. The
+                dashboard is sleek, the performance is unmatched, and support
+                answered in under a minute. Legit the best hosting I’ve tried.
+                🤯”
               </p>
             </div>
           </div>

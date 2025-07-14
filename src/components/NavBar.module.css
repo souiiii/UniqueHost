@@ -54,6 +54,7 @@
   position: absolute;
   bottom: -5%;
   transition: all 0.2s ease-out;
+  z-index: -1;
 }
 
 .navLinkContainer:hover .underline {
@@ -94,7 +95,23 @@
 
 .svg path{
   fill: var(--text-prim);
+}
 
+:global(.active)::after{
+  content: '';
+  width: 5px;
+  left: -12px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--text-prim);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-out;
+}
+
+:global(.active):hover::after{
+  /* background-color: var(--prim-col);   */
 }
 
 @media (max-width: 1676px) {

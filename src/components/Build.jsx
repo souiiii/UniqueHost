@@ -1,9 +1,22 @@
+import { useEffect, useRef } from "react";
 import styles from "./Build.module.css";
+import gsap from "gsap";
 
 export default function Build() {
+  const cont = useRef(null)
+
+  useEffect(() => {
+    gsap.fromTo(
+      cont.current,
+      { opacity: 0 },
+      { opacity: 1, duration: 0.8, ease: "power1.inOut" }
+    );
+  }, []);
+
+
   return (
     <div className={styles.parent}>
-      <div className={styles.container}>
+      <div ref={cont} className={styles.container}>
         <div className={styles.headingDiv}>
           <div className={styles.imgDiv}>
             <img
@@ -37,10 +50,38 @@ export default function Build() {
             Whether it’s a clean landing page or a fully custom site, he’ll help
             you get online quicker — without the usual delays or confusion. Want
             to see his work?{" "}
-            <a className={styles.profileLink}>Check out his portfolio</a> or
-            connect with him on <a className={styles.socialLinks}>Instagram</a>,{" "}
-            <a className={styles.socialLinks}>LinkedIn</a>, or{" "}
-            <a className={styles.socialLinks}>Discord</a> to get started.
+            <a
+              href="https://www.meshahid.me/"
+              target="_blank"
+              className={styles.profileLink}
+            >
+              Check out his portfolio
+            </a>{" "}
+            or connect with him on{" "}
+            <a
+              href="https://www.instagram.com/kya_yaar_shahid/"
+              target="_blank"
+              className={styles.socialLinks}
+            >
+              Instagram
+            </a>
+            ,{" "}
+            <a
+              href="https://www.linkedin.com/in/reheshahid/"
+              target="_blank"
+              className={styles.socialLinks}
+            >
+              LinkedIn
+            </a>
+            , or{" "}
+            <a
+              href="https://discord.com/users/872886208068476929"
+              target="_blank"
+              className={styles.socialLinks}
+            >
+              Discord
+            </a>{" "}
+            to get started.
           </p>
           <button className={`button ${styles.button} ${styles.buttonPort}`}>
             <a
@@ -65,7 +106,11 @@ export default function Build() {
           />
         </div>
         <button className={`button ${styles.button}`}>
-          <a className={styles.linkButton}>
+          <a
+            href="https://discord.com/invite/PtyfbrV5Px"
+            target="_blank"
+            className={styles.linkButton}
+          >
             <span className={styles.discordDiv}>
               <svg
                 className={styles.discordSvg}

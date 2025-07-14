@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./HeroSection.module.css";
 
 export default function HeroSection({
@@ -19,11 +20,18 @@ export default function HeroSection({
             of thousands.
           </p>
           <div className={styles.buttonDiv}>
-            <button className={`button ${styles.getStartedButton}`}>
+            <Link
+              to="/hostings"
+              className={`button ${styles.getStartedButton}`}
+            >
               Get Started →
               <div className={`button ${styles.shadow}`}>Get Started →</div>
-            </button>
-            <div className={styles.discordDiv}>
+            </Link>
+            <a
+              href="https://discord.com/invite/PtyfbrV5Px"
+              target="_blank"
+              className={styles.discordDiv}
+            >
               <svg
                 className={styles.discordSvg}
                 xmlns="http://www.w3.org/2000/svg"
@@ -43,11 +51,12 @@ export default function HeroSection({
               <div>
                 Join Our <span className={styles.discord}>Discord</span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div className={styles.imgDiv}>
           <img
+            loading="lazy"
             className={styles.img}
             src="https://ik.imagekit.io/kyayaarshahid/kindd.webp"
           ></img>
