@@ -564,6 +564,10 @@
     font-size: 18px;
   }
 
+  .gridBox:hover{
+  transform: translateY(-5px) scale(1.02);
+}
+
   .gridBox1,
   .gridBox2 {
     grid-row: 1;
