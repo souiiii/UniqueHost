@@ -1,13 +1,28 @@
-import { Link, NavLink } from 'react-router-dom';
-import LogoDiv from './LogoDiv';
-import styles from './NavBar.module.css';
-import { useState } from 'react';
-import Menu from './Menu';
+import { Link, NavLink } from "react-router-dom";
+import LogoDiv from "./LogoDiv";
+import styles from "./NavBar.module.css";
+import { useEffect, useRef, useState } from "react";
+import Menu from "./Menu";
 
 export default function NavBar() {
+  const navRef = useRef(null);
   const [navView, setNavView] = useState(false);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setNavView(false); // Close nav or whatever state change you want
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
   return (
-    <div className={styles.parent}>
+    <div ref={navRef} className={styles.parent}>
       <div className={styles.container}>
         <LogoDiv />
         <div className={styles.rightNavDiv}>
@@ -26,7 +41,11 @@ export default function NavBar() {
             </li>
             <li className={styles.navLinkContainer}>
               <div className={styles.underline}></div>
-              <NavLink to="/website-builder" href="" className={styles.navLinks}>
+              <NavLink
+                to="/website-builder"
+                href=""
+                className={styles.navLinks}
+              >
                 Website Builder
               </NavLink>
             </li>
@@ -50,7 +69,10 @@ export default function NavBar() {
               </svg>
             </div>
           </Link>
-          <div onClick={()=>setNavView((view)=>(!view))} className={styles.svgDiv}>
+          <div
+            onClick={() => setNavView((view) => !view)}
+            className={styles.svgDiv}
+          >
             <svg
               className={styles.svg}
               xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +86,7 @@ export default function NavBar() {
           </div>
         </div>
       </div>
-      {navView && <Menu/>}
+      {navView && <Menu />}
     </div>
   );
 }
