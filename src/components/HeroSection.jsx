@@ -58,7 +58,6 @@ export default function HeroSection({
           <img
             className={styles.img}
             src="https://ik.imagekit.io/kyayaarshahid/kindd.webp"
-            loading="lazy"
             alt="minecraft man on horse"
           ></img>
         </div>

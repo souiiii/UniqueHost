@@ -8,7 +8,7 @@ export default function HostingPlans({children, price, ram, cpu, ssd, vps=false,
       <div className={styles.hostingImageDiv}>
         <img
           className={styles.hostingImage}
-          loading="lazy"
+          // loading="lazy"
           alt="block image"
           src={img}
         />
