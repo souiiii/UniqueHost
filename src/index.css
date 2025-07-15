@@ -8,6 +8,7 @@
   margin: 0;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
 
 body, html{
@@ -43,6 +44,12 @@ body, html{
 .button:hover{
   background-color: var(--prim-col);
 }
+
+h1, h2, p{
+  user-select: text;
+}
+
+
 
 
 @media (max-width: 737px){

@@ -58,6 +58,7 @@ export default function FooterSection({footerRef1, footerRef2}) {
                 <img
                   src="https://ik.imagekit.io/kyayaarshahid/buttonbg.webp"
                   className={styles.buttonBg}
+                  alt="button background"
                 />
               </div>
               <Link to="/hostings" className={`button ${styles.button}`}>

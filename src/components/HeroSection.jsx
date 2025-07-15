@@ -24,7 +24,7 @@ export default function HeroSection({
               to="/hostings"
               className={`button ${styles.getStartedButton}`}
             >
-              Get Started →
+              <span style={{visibility: 'hidden'}}>Get Started →</span>
               <div className={`button ${styles.shadow}`}>Get Started →</div>
             </Link>
             <a
