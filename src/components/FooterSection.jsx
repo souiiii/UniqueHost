@@ -89,8 +89,13 @@ export default function FooterSection({footerRef1, footerRef2}) {
               © 2025, UniqueHosting.com - All rights reserved. Not affiliated
               with Mojang, AB. Nor should we be considered a company endorsed by
               Mojang, AB. Email:{" "}
-              <span className={styles.email}>support@uniquehosting.com</span> -
-              Phone: +91 970 102 0707
+              <a
+                href="mailto:innovator.anant@gmail.com"
+                className={styles.email}
+              >
+                innovator.anant@gmail.com
+              </a>{" "}
+              - Location: India (+91)
             </h1>
           </div>
         </div>

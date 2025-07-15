@@ -30,11 +30,15 @@
   /* top: 65px; */
   top: -28%;
   right: 0vw;
+  overflow: hidden;
+}
 
-  overflow-x: hidden;
+.img:hover{
+  transform: rotate(5deg) scale(1.08) ;
 }
 
 .img {
+  transition: all 0.3s ease;
   position: relative;
   right: -8%;
   /* width: 900px; */

@@ -42,6 +42,8 @@
   overflow-x: hidden;
 }
 
+
+
 .img {
   position: relative;
   /* width: 900px; */
@@ -188,6 +190,11 @@
   gap: 0.5rem;
   padding: 1rem;
   flex-direction: column;
+  transition: all 0.2s ease;
+}
+
+.gridBox:hover{
+  transform: translateY(-10px) scale(1.02);
 }
 
 .gridBox1,
